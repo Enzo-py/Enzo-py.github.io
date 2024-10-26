@@ -1,1 +1,233 @@
-Hello 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enzo Pinchon</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/ebd4e3dd01.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <section class="home">
+            <span class="title">Hello, I am Enzo, a student in data and <span class="highlight">artificial intelligence</span>.</span>
+
+            <nav>
+                <span onclick="document.querySelector('.about-me').scrollIntoView({ behavior: 'smooth' });">About me</span>
+                <span onclick="document.querySelector('.projets').scrollIntoView({ behavior: 'smooth' });">Projects</span>
+                <span onclick="document.querySelector('.experience').scrollIntoView({ behavior: 'smooth' });">Experience</span>
+                <span onclick="document.querySelector('.contact').scrollIntoView({ behavior: 'smooth' });">Contact</span>
+            </nav>
+        </section>
+        
+        <div class="background-circle primary scroll-pop-anim" style="margin-left: 5svh; width: 10svh;"></div>
+        <div class="background-circle secondary scroll-pop-anim" style="margin-left: -20svh;"></div>
+
+        <section class="about-me">
+            <h3>About me</h3>
+
+            <div class="about-me-content">
+                <img src="img/photo.jpeg" alt="Enzo Pinchon" class="scroll-pop-anim">
+
+                <p class="scroll-pop-anim">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+            </div>
+
+            <div class="background-circle accent scroll-pop-anim" style="right: -10px; width: 5svh; margin-top: 10svh;"></div>
+            <div class="background-circle primary scroll-pop-anim" style="right: 10px; width: 15svh; margin-top: 40svh;"></div>
+
+            <div class="skills">
+                <h4>Languages & Frameworks</h4>
+                <div class="prog-langages">
+                    <img src="img/python.webp" alt="Python" title="Python" class="scroll-pop-anim">
+                    <img src="img/sql.png" alt="SQL" title="SQL" class="scroll-pop-anim">
+                    <img src="img/jscript.png" alt="JS" title="JS" class="scroll-pop-anim">
+                    <img src="img/c++.png" alt="C++" title="C++" class="scroll-pop-anim">
+                </div>
+
+                <div class="frameworks">
+                    <img src="img/pytorch.png" alt="Pytorch" title="Pytorch" class="scroll-pop-anim">
+                    <img src="img/django.png" alt="Django" title="Django" class="scroll-pop-anim">
+                    <img src="img/d3.png" alt="D3.js" title="D3.js" class="scroll-pop-anim">
+                </div>
+            </div>
+        </section>
+
+        <section class="projets">
+            <h3>Projets</h3>
+            <div class="ant-colony-optimization">
+                <h4>Timetable generation (ACO)</h4>
+            </div>
+
+            <div class="sql-tool">
+                <h4>SQL Tool</h4>
+            </div>
+
+            <div class="puissance-4">
+                <h4>Connect 4</h4>
+            </div>
+        </section>
+        
+        <div class="background-circle secondary scroll-pop-anim" style="left: 20svh;"></div>
+        <div class="background-circle primary scroll-pop-anim" style="left: 35svh; margin-top: 60svh; width: 40svh;"></div>
+        <div class="background-circle accent scroll-pop-anim" style="left: 55svh; margin-top: 45svh; width: 20svh;"></div>
+
+        <section class="experience">
+            <h3>Experience</h3>
+
+            <div class="types">
+                <button class="academic active">
+                    <i class="fas fa-graduation-cap"></i>
+                    Academic
+                </button>
+                <button class="professional">
+                    <i class="fas fa-briefcase"></i>
+                    Professional
+                </button>
+            </div>
+
+            <div class="academic-experience tab active">
+                <div class="block scroll-pop-anim">
+                    <h4>Master's degree in Data and Artificial Intelligence</h4>
+                    <h5>Institut Polytechnique de Paris (Paris, France)</h5>
+                    <p>
+                        International program focused on Data Science, Machine Learning, and 
+                        Artificial Intelligence.
+                    </p>
+                </div>
+                
+                
+                <div class="block scroll-pop-anim">
+                    <h4>Bachelor's degree in Computer Science</h4>
+                    <h5>Université Picardie Jules Verne (Amiens, France)</h5>
+                    <p>
+                        Application development track with two years of work-study program.
+                        <br/>
+                        <br/>
+                        <u>Courses completed</u>: Mathematical Modeling, Decision Support, Advanced Programming, 
+                        Algorithmic Quality, Advanced Virtualization
+                    </p>
+                </div>
+                
+                <div class="block scroll-pop-anim">
+                    <h4>High school diploma in Mathematics & Computer Science</h4>
+                    <h5>Lycée Pierre Corneille (Rouen, France)</h5>
+                    <p>
+                        Graduated with Honors
+                    </p>
+                </div>
+                
+                <div class="block scroll-pop-anim">
+                    <h4>Aviation Initiation Certificate</h4>
+                    <h5>Lycée Pierre Corneille (Rouen, France)</h5>
+                    <p>
+                        Graduated with High Honors
+                    </p>
+                </div>
+                
+            </div>
+
+            <div class="professional-experience tab">
+                <div class="block scroll-pop-anim">
+                    <h4>IT Engineer Apprenticeship</h4>
+                    <h5> Holdys - Petrochemical Industry (Yvetot, France)</h5>
+                    <p>
+                        Conceptualization and development of an application for managing quality processes 
+                        and optimizing delivery scheduling. Ensured user support, maintenance, and data 
+                        visualization.
+                        <br/>
+                        <br/>
+                        <u>Skills developed</u>: software programming, agile methodology, data analysis, 
+                        autonomy, Python (Django framework) and SQL.                        
+                    </p>
+                </div>
+                
+                <div class="block scroll-pop-anim">
+                    <h4>Web Developer</h4>
+                    <h5>Luzaka - E-commerce (Malaunay, France)</h5>
+                    <p>
+                        I Developed custom modules for the Magento 2 CMS and redesigned the 
+                        <a href="https://www.luzaka.com/" style="text-decoration: none; color: blue; 
+                        font-style: italic;">website's interface</a> 
+                        based on mockups. Deployed a new version of the CMS.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h3>Contact</h3>
+            <h5>Let's get in touch</h5>
+            <br/>
+
+            <div class="contact-content">
+                <a href="https://fr.linkedin.com/in/enzo-pinchon-a6a6b0235"><i class="fa-brands fa-linkedin-in scroll-pop-anim"></i> Enzo Pinchon</a>
+                <a href="https://github.com/Enzo-py"><i class="fa-brands fa-github scroll-pop-anim"></i> Enzo-py</a>
+                <span>
+                    <a href="mailto:enzo.pinchon@ip-paris.fr"> <i class="fa-regular fa-envelope scroll-pop-anim"></i></a>
+                    enzo.pinchon@ip-paris.fr
+                </span>
+            </div>
+        </section>
+    </main>
+
+    <span class="go-up" onclick="document.querySelector('.home').scrollIntoView({ behavior: 'smooth' });">
+        <i class="fas fa-arrow-up"></i>
+    </span>
+
+    <script>
+        const go_up_button = document.querySelector('.go-up');
+        const btn_academic = document.querySelector('.academic');
+        const btn_professional = document.querySelector('.professional');
+        const tab_academic = document.querySelector('.academic-experience');
+        const tab_professional = document.querySelector('.professional-experience');
+
+        window.onscroll = () => {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                go_up_button.style.display = 'flex';
+            } else {
+                go_up_button.style.display = 'none';
+            }
+        };
+
+        btn_academic.onclick = () => {
+            btn_academic.classList.add('active');
+            btn_professional.classList.remove('active');
+            tab_academic.classList.add('active');
+            tab_professional.classList.remove('active');
+        };
+
+        btn_professional.onclick = () => {
+            btn_academic.classList.remove('active');
+            btn_professional.classList.add('active');
+            tab_academic.classList.remove('active');
+            tab_professional.classList.add('active');
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.scroll-pop-anim');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    } else {
+                        entry.target.classList.remove('active'); // Retire la classe pour réinitialiser l'animation
+                    }
+                });
+            }, { threshold: 0.2 * Math.random()}); // 10% visible pour déclencher
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+
+
+    </script>
+</body>
+</html>
