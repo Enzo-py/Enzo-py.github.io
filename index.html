@@ -4,15 +4,27 @@
     <title>Enzo Pinchon</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/ebd4e3dd01.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="description" content="Enzo Pinchon's personal website"> -->
+    <meta name="keywords" content="Enzo Pinchon, Data Science, Artificial Intelligence, Machine Learning, Python, SQL, Django, D3.js">
+    <meta name="author" content="Enzo Pinchon">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 </head>
 <body>
     <main>
         <section class="home">
+            <div class="theme-btn">
+                <input type="checkbox" class="theme">
+                <i class="fas fa-sun sun"></i>
+                <i class="fas fa-moon moon"></i>
+            </div>
+            
             <span class="title">Hello, I am Enzo, a student in data and <span class="highlight">artificial intelligence</span>.</span>
 
             <nav>
                 <span onclick="document.querySelector('.about-me').scrollIntoView({ behavior: 'smooth' });">About me</span>
-                <span onclick="document.querySelector('.projets').scrollIntoView({ behavior: 'smooth' });">Projects</span>
+                <span onclick="document.querySelector('.projects').scrollIntoView({ behavior: 'smooth' });">Projects</span>
                 <span onclick="document.querySelector('.experience').scrollIntoView({ behavior: 'smooth' });">Experience</span>
                 <span onclick="document.querySelector('.contact').scrollIntoView({ behavior: 'smooth' });">Contact</span>
             </nav>
@@ -25,7 +37,7 @@
             <h3>About me</h3>
 
             <div class="about-me-content">
-                <img src="img/photo.jpeg" alt="Enzo Pinchon" class="scroll-pop-anim">
+                <img src="data/img/photo.jpeg" alt="Enzo Pinchon" class="scroll-pop-anim">
 
                 <p class="scroll-pop-anim">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -44,36 +56,230 @@
             <div class="skills">
                 <h4>Languages & Frameworks</h4>
                 <div class="prog-langages">
-                    <img src="img/python.webp" alt="Python" title="Python" class="scroll-pop-anim">
-                    <img src="img/sql.png" alt="SQL" title="SQL" class="scroll-pop-anim">
-                    <img src="img/jscript.png" alt="JS" title="JS" class="scroll-pop-anim">
-                    <img src="img/c++.png" alt="C++" title="C++" class="scroll-pop-anim">
+                    <img src="data/img/logo/python.webp" alt="Python" title="Python">
+                    <img src="data/img/logo/sql.png" alt="SQL" title="SQL">
+                    <img src="data/img/logo/jscript.png" alt="JS" title="JS">
+                    <img src="data/img/logo/c++.png" alt="C++" title="C++">
                 </div>
 
                 <div class="frameworks">
-                    <img src="img/pytorch.png" alt="Pytorch" title="Pytorch" class="scroll-pop-anim">
-                    <img src="img/django.png" alt="Django" title="Django" class="scroll-pop-anim">
-                    <img src="img/d3.png" alt="D3.js" title="D3.js" class="scroll-pop-anim">
+                    <img src="data/img/logo/pytorch.png" alt="Pytorch" title="Pytorch">
+                    <img src="data/img/logo/django.png" alt="Django" title="Django">
+                    <img src="data/img/logo/d3.png" alt="D3.js" title="D3.js">
                 </div>
+            </div>
+
+            <div class="competitions">
+                <h4>Competitions</h4>
             </div>
         </section>
 
-        <section class="projets">
-            <h3>Projets</h3>
-            <div class="ant-colony-optimization">
-                <h4>Timetable generation (ACO)</h4>
-            </div>
+        <section class="projects">
+            <h3>Projects</h3>
 
-            <div class="sql-tool">
-                <h4>SQL Tool</h4>
+            <div class="ant-colony-optimization">
+                <div class="kairos project">
+                    <div class="inner-wrapper">
+                        <div class="project-displayer">
+                            <div class="imgs-wrapper">
+                                <img src="data/img/aco/img1.png" class="active"> <!-- Image 1 -->
+                                <img src="data/img/aco/img2.png"> <!-- Image 2 -->
+                                <img src="data/img/aco/img3.png"> <!-- Image 3 -->
+                                <img src="data/img/aco/img4.png"> <!-- Image 4 -->
+                            </div>
+                        </div>
+                        <div class="left-part">
+                            <h4>Timetable generation using ACO algorithm</h4>
+                            <p>
+                                As part of a team of four, we developed a web application for school 
+                                schedule management. 
+                                <br/><br/>
+                                I <u>designed the API</u> using Django Framework and implemented 
+                                a <u>schedule generator</u> based on the Ant Colony Optimization algorithm.
+
+                                <br/><br/>
+                                The generator utilizes a scoring function to evaluate timetable quality, 
+                                drawing parallels to the dual problem in optimization. 
+                                This method enhances flexibility while adhering to critical constraints 
+                                regarding teacher and class availability. 
+
+                                The ACO algorithm explores solutions without pheromone expiration, 
+                                maintaining stability in the data. Additionally, a neighborhood 
+                                optimization function refines the results by testing promising 
+                                combinations after each iteration.
+                                
+                                <br/><br/>
+                                This approach aims to produce optimal timetables that enhance efficiency 
+                                and respect availability constraints.
+                            </p>
+
+                            <div class="tags-wrapper">
+                                <span>Python</span>
+                                <span>Django</span>
+                                <span>Machine learning</span>
+                            </div>
+
+                            <h6 onclick="toggle_showcase(this)">More information</h6>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="algo-showcase">
+
+                    <div class="step 1">
+                        <table class="timetable">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>08:00</th>
+                                    <th>08:30</th>
+                                    <th>09:00</th>
+                                    <th>09:30</th>
+                                    <th>10:00</th>
+                                    <th>10:30</th>
+                                    <th>...</th>
+                                    <th>20:00</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td colspan="2" class="course-1">Course 1</td>
+                                    <td></td>
+                                    <td colspan="3" class="course-2">Course 2</td>
+                                    <td>...</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>...</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>...</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>...</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td></td>
+                                    <td colspan="2" class="course-3">Course 3</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>...</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <i class="fa fa-arrow-right"></i>
+
+                        <span>Score: 14%</span>
+
+                        <i style="font-size: 12rem; font-weight: 100; color: var(--border-color);">{</i>
+
+                        <div class="score-explanation">
+                            <span>Number of hours for students
+                                <div class="explain">
+                                    1. Penalty function for a day \( d \), based on the number of class hours \( h_d \):
+
+                                    \[
+                                    \text{penalty}(h_d) = \begin{cases} 
+                                          0 & \text{if } h_d \leq 8 \\
+                                          (h_d - 8)^2 & \text{if } h_d > 8 
+                                       \end{cases}
+                                    \]
+                                    
+                                    2. Function \(\text{nb hours for students}(tt)\), which uses this penalty for each day in the timetable (TT):
+                                    
+                                    \[
+                                    \text{nb hours for students}(tt) = \sum_{d \in \text{days}} \text{penalty}(h_d)
+                                    \]
+                                    
+                                    where \( h_d \) represents the total number of class hours on day \( d \).  
+                                    <br/><br/>
+                                    <img src="data/img/aco/penalty_func_for_hours_in_day.png" style="width: min(max(300px, 50vw), 600px);" alt="Penalty function for hours in a day">
+                                </div>
+                            </span>
+
+                            <span>Number of hours for teachers</span>
+                            <span>Size of gaps between hours for students</span>
+                            <span>Size of gaps between hours for teachers</span>
+                            <span>Number of hours on Saturday</span>
+                            <span>Size of the lunch break</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sql-project-internship">
+                <div class="sql-tool project">
+                    <div class="inner-wrapper">
+                        <div class="project-displayer">
+                            <div class="imgs-wrapper">
+                                <img src="data/img/sql-r/img1.png" class="active"> <!-- Image 1 -->
+                                <img src="data/img/sql-r/img2.png"> <!-- Image 2 -->
+                                <img src="data/img/sql-r/img3.png"> <!-- Image 3 -->
+                                <img src="data/img/sql-r/img4.png"> <!-- Image 4 -->
+                            </div>
+                        </div>
+
+                        <div class="left-part">
+                            <h4>SQL Tool</h4>
+
+                            <div class="tags-wrapper">
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>JS</span>
+                                <span>Django</span>
+                            </div>
+
+                            <h6 onclick="toggle_showcase(this)">More information</h6>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
 
             <div class="puissance-4">
-                <h4>Connect 4</h4>
+                <div class="connect4 project">
+                    <div class="inner-wrapper">
+                        <div class="connect4-grid"></div>
+
+                        <div class="left-part">
+                            <h4>Connect 4</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                <br>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+
+                            <div class="tags-wrapper">
+                                <span>JS / C#</span>
+                                <span>Machine learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
-        <div class="background-circle secondary scroll-pop-anim" style="left: 20svh;"></div>
+        <div class="background-circle secondary scroll-pop-anim" style="left: 0; margin-top: -20svh; margin-left: 20svh;"></div>
         <div class="background-circle primary scroll-pop-anim" style="left: 35svh; margin-top: 60svh; width: 40svh;"></div>
         <div class="background-circle accent scroll-pop-anim" style="left: 55svh; margin-top: 45svh; width: 20svh;"></div>
 
@@ -172,6 +378,8 @@
                     <a href="mailto:enzo.pinchon@ip-paris.fr"> <i class="fa-regular fa-envelope scroll-pop-anim"></i></a>
                     enzo.pinchon@ip-paris.fr
                 </span>
+                
+                <a href="data/ENZO_PINCHON.pdf" download><i class="fa-solid fa-download"></i> Resume</a>
             </div>
         </section>
     </main>
@@ -186,6 +394,7 @@
         const btn_professional = document.querySelector('.professional');
         const tab_academic = document.querySelector('.academic-experience');
         const tab_professional = document.querySelector('.professional-experience');
+         // 25vw * screen width
 
         window.onscroll = () => {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -220,14 +429,130 @@
                         entry.target.classList.remove('active'); // Retire la classe pour réinitialiser l'animation
                     }
                 });
-            }, { threshold: 0.2 * Math.random()}); // 10% visible pour déclencher
+            }, { threshold: 0.15 * Math.random()}); // 10% visible pour déclencher
 
             elements.forEach(element => {
                 observer.observe(element);
             });
+
+            document.querySelectorAll('.background-circle').forEach(circle => {
+                circle.setAttribute('width', circle.style.width || 30);
+                circle.setAttribute('m-left', circle.style.marginLeft || 0);
+                circle.setAttribute('m-top', circle.style.marginTop || 0);
+                update_circle(circle);
+            });
+
+            const sliders = document.querySelectorAll(".imgs-wrapper");
+            sliders.forEach(slider => {
+                const images = slider.querySelectorAll("img");
+                let currentIndex = 0;
+
+                function showNextImage() {
+                    // Cache l'image actuelle
+                    images[currentIndex].classList.remove("active");
+
+                    // Calcul de l'index de la prochaine image
+                    currentIndex = (currentIndex + 1) % images.length;
+
+                    // Affiche la prochaine image
+                    images[currentIndex].classList.add("active");
+                }
+
+                // Affiche la première image immédiatement
+                images[currentIndex].classList.add("active");
+
+                // Change d'image toutes les secondes pour ce slider
+                setInterval(showNextImage, 3500);
+            });
         });
 
+        window.addEventListener('resize', () => {
+            document.querySelectorAll('.background-circle').forEach(circle => {
+                update_circle(circle);
+            });
+        });
 
+        function update_circle(circle) {
+            let circle_max_width = 0.25 * window.innerWidth < 500 ? 500 : 0.25 * window.innerWidth;
+            let circle_width = parseInt(circle.getAttribute('width')) * window.innerHeight / 100;
+
+            if (circle_width > circle_max_width) {
+                // garder le rapport de taille
+                let ratio = circle_max_width / circle_width;
+                circle.style.width = `${ratio * circle_max_width}px`;
+
+                let margin_left = parseInt(circle.getAttribute('m-left')) * window.innerHeight / 100
+                let ratio_margin_left = margin_left / circle_width
+                circle.style.marginLeft = `${ratio_margin_left * circle_max_width}px`;
+
+                let margin_top = parseInt(circle.getAttribute('m-top')) * window.innerHeight / 100
+                let ratio_margin_top = margin_top / circle_width
+                circle.style.marginTop = `${ratio_margin_top * circle_max_width}px`;
+
+            } else {
+                circle.style.width = `${circle_width}px`;
+                circle.style.marginTop = `${parseInt(circle.getAttribute('m-top')) * window.innerHeight / 100}px`;
+                circle.style.marginLeft = `${parseInt(circle.getAttribute('m-left')) * window.innerHeight / 100}px`;
+            }
+        }
+
+        const triggers = document.querySelectorAll('.algo-showcase span:has( > .explain)');
+        triggers.forEach(trigger => {
+            trigger.addEventListener('mouseover', () => {
+                setTimeout(() => {
+                    let explain = trigger.querySelector('.explain');
+                    // check if explain don't overflow the screen
+                    if (explain.getBoundingClientRect().right > window.innerWidth) {
+                        explain.style.right = "10px";
+                    }
+                }, 10);
+            });
+        });
+
+        function toggle_showcase(h6) {
+            h6.nextElementSibling.classList.toggle('active');
+            h6.innerHTML = h6.innerHTML === 'More information' ? 'Less information' : 'More information';
+        }
+
+        let currentLayer = -1; // Calque actuel
+        const layers = Array.from(document.querySelectorAll('.project'));
+        
+        let layer_start_y = []
+        let index = 0
+        layers[0].style.marginTop = '200px';
+        layers[0].style.transform = `translateY(0)`;
+
+        layers.forEach(layer => {
+            layer_start_y.push(layer.getBoundingClientRect().top - window.innerHeight + window.scrollY - 400 * index + 100);
+            index++;
+        });
+        layers[layers.length - 1].style.paddingBottom = 0;
+        layers[layers.length - 1].style.height = '95svh';
+        layers[layers.length - 1].style.maxHeight = '55vw';
+
+        function handleScroll() {
+            let scrollY = window.scrollY;
+            let nextLayer = currentLayer + 1;
+            let prevLayer = currentLayer - 1;
+
+            if (scrollY > layer_start_y[nextLayer] && nextLayer < layers.length) {
+                currentLayer = nextLayer;
+
+                layers.slice(currentLayer, layers.length).forEach(layer => {
+                    layer.style.transform = `translateY(-${currentLayer * 400}px)`;
+                });
+            } else if (scrollY <= layer_start_y[currentLayer] && prevLayer > -1) {
+                layers[currentLayer].style.transform = `translateY(0px)`;
+                currentLayer = prevLayer;
+            } else if (scrollY <= layer_start_y[0] && currentLayer > -1) {
+                currentLayer = -1;
+                layers.forEach(layer => {
+                    layer.style.transform = `translateY(0)`;
+                });
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
     </script>
 </body>
 </html>
