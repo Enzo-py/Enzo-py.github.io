@@ -53,6 +53,7 @@ body {
     --light-secondary-color: #D2F6DC;
     --accent-color: #ff5757;
     --theme-icon-color: #ffd642;
+    --info-color: #2055d0;
 
     --tag-color: #ffffff5a;
 
@@ -80,6 +81,7 @@ body:has( .theme:checked ) {
     --text-color: #e1dbdd;
     --light-text-color: #aca3a2;
     --theme-icon-color: #a0c4e0;
+    --info-color: #61a2ed;
 
     --light-primary-color: #5e5a4f;
     --light-secondary-color: #4a584e;
@@ -126,7 +128,7 @@ section.home .theme-btn {
     position: relative;
     width: 4rem;
     height: 2.1rem;
-    overflow-x: hidden;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -274,6 +276,10 @@ section.about-me .about-me-content > img {
     border: solid 2px var(--border-color);
 }
 
+section.about-me .about-me-content p {
+    width: 40%;
+}
+
 section.about-me .skills {
     display: flex;
     flex-direction: column;
@@ -309,6 +315,117 @@ section.about-me .skills div img {
 section.about-me .skills div img:hover {
     filter: grayscale(0%);
     transform: scale(1.8) !important;
+}
+
+section.about-me .competitions-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4svh;
+}
+
+@media screen and (max-width: 980px) {
+    section.about-me .competitions-wrapper {
+        flex-direction: column;
+    }
+
+    section.about-me .competitions-wrapper div.competition {
+        width: 100%;
+        height: 25svh;
+        min-height: fit-content;
+        margin-top: -2px;
+    }
+
+    section.about-me .competitions-wrapper div.competition h5 {
+        text-align: left;
+    }
+
+    section.about-me .competitions-wrapper div.album {
+        width: 100%;
+        height: 20svh;
+        min-height: fit-content;
+        margin-top: -2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    section.about-me .competitions-wrapper div.album img {
+        width: 45%;
+    }
+}
+
+section.about-me .competitions-wrapper .competition {
+    width: 33%;
+    height: calc(min(33vw, 1440px / 3) - 40px);
+    display: grid;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2svh;
+    border: solid 2px var(--border-color);
+    margin-left: -2px;
+}
+
+section.about-me .competitions-wrapper .competition h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    margin: 0;
+    text-align: center;
+    color: var(--text-color);
+}
+
+section.about-me .competitions-wrapper .competition h5 i {
+    font-size: 0.9rem;
+    color: var(--light-text-color);
+}
+
+section.about-me .competitions-wrapper .competition span {
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--light-text-color);
+    text-align: left;
+}
+
+section.about-me .competitions .album {
+    width: calc(99% - 4px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2svh;
+    border: solid 2px var(--border-color);
+    margin-top: -2px;
+    margin-left: -2px;
+}
+
+section.about-me .competitions .album img {
+    width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    section.about-me .about-me-content {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+
+    section.about-me .about-me-content p {
+        width: 100%;
+        text-align: center;
+    }
+
+    section.about-me .skills > div.prog-langages, section.about-me .skills > div.frameworks {
+        row-gap: 50px;
+        flex-wrap: wrap;
+        transform: none;
+    }
 }
 
 .background-circle {
@@ -347,11 +464,12 @@ section.projects .project-displayer {
     min-width: 320px;
     position: relative;
     box-sizing: content-box;
+    margin-top: 20px;
 }
 
 section.projects .project {
     width: 100%;
-    height: calc(min(95svh, 55vw) + 400px);
+    height: calc(max(min(95svh, 55vw), 750px) + 400px);
     padding-bottom: 400px;
     /* max-height: 55vw; */
     display: flex;
@@ -384,7 +502,24 @@ section.projects .project .inner-wrapper {
     justify-content: center;
     align-items: flex-start;
     column-gap: 50px;
-    padding: 0 20px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    section.projects .project {
+        height: fit-content;
+    }
+
+    section.projects .project .inner-wrapper {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    section.projects .project .left-part {
+        width: 100%;
+        max-width: unset;
+        min-width: unset;
+    }
 }
 
 
@@ -463,26 +598,123 @@ section.projects .tags-wrapper span {
 
 section.projects .algo-showcase {
     display: none;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     border-top: solid 1px var(--border-color);
-    margin-top: 1svh;
+    position: fixed;
+    width: 96vw;
+    height: 96svh;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--background-color);
+    left: 2vw;
+    top: 2vh;
+    overflow-y: scroll;
+    z-index: 200;
+}
+
+section.projects .algo-showcase .fa-info-circle {
+    color: var(--info-color);
+}
+
+section.projects:has( .algo-showcase.active) .background {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 section.projects .algo-showcase.active {
     display: flex;
 }
 
+section.projects .algo-showcase i.fa-times {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+section.projects .algo-showcase .assoc-symbol {
+    font-size: 12rem;
+    font-weight: 100;
+    color: var(--border-color);
+}
+
+@media screen and (max-width: 1200px) {
+    section.projects .algo-showcase .assoc-symbol {
+        display: none;
+    }
+    
+}
+
+section.projects .algo-showcase .small {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    section.projects .algo-showcase p.step-header, 
+    section.projects .algo-showcase .step,
+    section.projects .algo-showcase .step div.block {
+        width: 100%;
+    }
+
+    section.projects .algo-showcase .large {
+        display: none;
+    }
+
+    section.projects .algo-showcase .small {
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width: 525px) {
+    section.projects .algo-showcase .timetable tr > *:first-child, section.projects .algo-showcase .timetable tr > *:last-child {
+        display: none;
+    }
+}
+
+section.projects .algo-showcase .step-header {
+    width: 70%;
+    min-width: 300px;
+    text-align: justify;
+    padding: 10px;
+    border: solid 2px var(--light-text-color);
+    border-radius: 8px;
+}
+
 section.projects .algo-showcase .step {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: fit-content;
+    flex-wrap: wrap;
     column-gap: 20px;
-    margin-top: 4svh;
+    row-gap: 20px;
 }
 
+section.projects .algo-showcase .step .block {
+    width: 70%;
+    min-width: 300px;
+    text-align: justify;
+}
+
+section.projects .algo-showcase .step .block p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+}
 
 section.projects .algo-showcase table.timetable {
     border-collapse: collapse;
@@ -499,6 +731,27 @@ section.projects .algo-showcase table.timetable td.course-1 { background-color: 
 section.projects .algo-showcase table.timetable td.course-2 { background-color: var(--primary-color); }
 section.projects .algo-showcase table.timetable td.course-3 { background-color: var(--accent-color); }
 
+section.projects .algo-showcase table.timetable td.free-slot {
+    background: repeating-linear-gradient(
+        45deg,         /* Angle de la hachure */
+        transparent,   /* Début de la couleur transparente */
+        transparent 2px, /* Largeur de l'espace transparent */
+        #92D050 2px,      /* Couleur de la hachure */
+        #92D050 4px       /* Largeur de la hachure */
+    );
+}
+
+section.projects .algo-showcase table.timetable td.not-free {
+    background: repeating-linear-gradient(
+        45deg,         /* Angle de la hachure */
+        transparent,   /* Début de la couleur transparente */
+        transparent 2px, /* Largeur de l'espace transparent */
+        #FF604E 2px,      /* Couleur de la hachure */
+        #FF604E 4px       /* Largeur de la hachure */
+    );
+}
+
+
 section.projects .algo-showcase .score-explanation {
     display: flex;
     flex-direction: column;
@@ -511,7 +764,8 @@ section.projects .algo-showcase .score-explanation span {
     text-align: left;
     border-bottom: solid 2px var(--border-color);
     width: 100%;
-    padding: 4px;
+    margin-top: 4px;
+    padding: 0 4px 4px 4px;
     cursor: pointer;
 }
 
@@ -526,6 +780,13 @@ section.projects .algo-showcase .score-explanation span .explain {
     box-shadow: 0 0 10px 1px var(--box-shadow-color);
     margin-right: 20px;
     width: fit-content;
+    max-height: 90svh;
+    overflow-y: scroll;
+    width: fit-content;
+}
+
+section.projects .algo-showcase .score-explanation span .explain b {
+    font-weight: 700;
 }
 
 section.projects .algo-showcase .score-explanation span:hover .explain {
@@ -556,6 +817,7 @@ section.projects .left-part {
     max-width: 440px;
     height: 100%;
     padding-top: 10px;
+    min-width: 420px;
 }
 
 section.projects .left-part h4 {
@@ -633,6 +895,7 @@ section.experience .tab::before {
     margin: 0 auto;
     position: absolute;
     left: calc(50% - 0.5px);
+    transition: all 0.3s ease-in-out;
 }
 
 section.experience .tab .block {
@@ -663,6 +926,21 @@ section.experience .tab .block:nth-child(odd) {
 
 section.experience .tab .block:nth-child(even) {
     padding-right: 52%;
+}
+
+@media screen and (max-width: 700px) {
+    section.experience div.tab div.block:nth-child(n) {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    
+    section.experience div.tab div.block:nth-child(n)::before {
+        left: -15px;
+    }
+
+    section.experience div.tab::before {
+        left: 26px;
+    }
 }
 
 section.experience .tab .block h4 {

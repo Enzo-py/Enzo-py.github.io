@@ -40,13 +40,9 @@
                 <img src="data/img/photo.jpeg" alt="Enzo Pinchon" class="scroll-pop-anim">
 
                 <p class="scroll-pop-anim">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    <br>
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    <br>
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    What immediately drew me to this field is the ability to create something with my own hands to solve complex problems. Striking the right balance between creativity and precision to develop innovative and clear solutions.
+                    <br/><br/>
+                    Currently pursuing a Master's in Data and Artificial Intelligence at IP Paris, I am discovering new algorithmic techniques with the goal of solving ever more captivating problems!
                 </p>
             </div>
 
@@ -68,9 +64,52 @@
                     <img src="data/img/logo/d3.png" alt="D3.js" title="D3.js">
                 </div>
             </div>
+            <div class="background-circle secondary scroll-pop-anim" style="right: 10px; width: 10svh; position: absolute;"></div>
+
+            <div class="background-circle secondary scroll-pop-anim" style="left: -10px; width: 25svh; margin-top: 10svh; position: relative;">
+                <div class="background-circle primary scroll-pop-anim" style="left: 0; margin-top: 28svh; width: 10svh; position: absolute; margin-left: 20svh;"></div>
+            </div>
+            <div class="background-circle accent scroll-pop-anim" style="right: 10px; width: 15svh; position: relative;"></div>
 
             <div class="competitions">
                 <h4>Competitions</h4>
+                <div class="competitions-wrapper">
+                    <div class="competition">
+                        <h5>Hauts-de-France programming contest (2024)
+                            <a href="https://www.univ-artois.fr/toutes-les-actualites/competition-de-programmation-des-hauts-de-france">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </h5>
+                        <span>Regional contest in team of 3. Problem solving and algorithmic.</span>
+                        <span>3rd place</span>
+                    </div>
+                    <div class="competition">
+                        <h5>Code Game Jam (2024)
+                            <a href="https://codegamejam.extragames.fr/editions-precedentes/edition-8-soon/">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </h5>
+                        <span>National contest in large team organized by Montpelier University. Creation of a video game in 36 hours.</span>
+                        <span>2nd place<span>
+                    </div>
+                    <div class="competition">
+                        <h5>Hackton by Zama, Hugging Face & Entrepreneur First (2024)
+                            <a href="https://huggingface.co/ppaihack">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </h5>
+                        <span>Selective internationale contest in team (2 - 4) on AI with Homomorphic Encryption. 36 hours.</span>
+                        <span>No ranking</span>
+                    </div>
+
+                    <div class="album">
+                        <img src="data/img/contest/arc.jpeg" alt="Hauts-de-France programming contest">
+                        <img src="data/img/contest/ppaih1.jpg" alt="ppaih day 1">
+                        <img src="data/img/contest/ppaih2.jpg" alt="ppaih day 2">
+                    </div>
+                </div>
+
+                
             </div>
         </section>
 
@@ -119,14 +158,39 @@
                                 <span>Machine learning</span>
                             </div>
 
-                            <h6 onclick="toggle_showcase(this)">More information</h6>
+                            <h6 onclick="toggle_showcase('kairos-showcase')">More information</h6>
                         </div>
                     </div>
                     
                 </div>
+                <div class="background"></div>
 
-                <div class="algo-showcase">
-
+                <div class="algo-showcase" id="kairos-showcase">
+                    <i class="fa fa-times" onclick="toggle_showcase('kairos-showcase')"></i>
+                    <span><i class="fa fa-info-circle"></i> fly over for more information</span>
+                    <br/>
+                    <p class="step-header">
+                        The Ant Colony Optimization algorithm is a metaheuristic algorithm inspired by the foraging behavior of ants. 
+                        It is used to solve combinatorial optimization problems. 
+                        <br/><br/>
+                        The algorithm is based on the principle of pheromone deposition by ants on the ground. 
+                        The more ants pass through a path, the more pheromones are deposited on it. 
+                        This allows other ants to follow the path more easily. 
+                        <br/><br/>
+                        The algorithm is based on the following principles:<br/>
+                        -   Construction of solutions<br/>
+                        -   Local search<br/>
+                        -   Updating of pheromones<br/>
+                        <br/>
+                        The first step is to define a function to evaluate the quality of the solutions.
+                        This function is named \( \text{score} \) and is defined as \( \text{score} : \mathbb{T} \to [0, 1] \)
+                        where \( \mathbb{T} \) represents the set of all possible timetables.
+                        <br/><br/>
+                        The score function is expressed as a weighted sum (average) of various feature functions. Each feature function represents a specific characteristic of the timetable (\( \text{tt} \in \mathbb{T} \)):
+                        \(
+                            \:\text{score}(\text{tt}) = \sum_{i=1}^n \alpha_i \cdot f_i(\text{tt})
+                        \)
+                    </p>
                     <div class="step 1">
                         <table class="timetable">
                             <thead>
@@ -147,7 +211,8 @@
                                     <td>Monday</td>
                                     <td colspan="2" class="course-1">Course 1</td>
                                     <td></td>
-                                    <td colspan="3" class="course-2">Course 2</td>
+                                    <td></td>
+                                    <td colspan="2" class="course-2">Course 2</td>
                                     <td>...</td>
                                     <td></td>
                                 </tr>
@@ -176,8 +241,7 @@
                                 <tr>
                                     <td>Saturday</td>
                                     <td></td>
-                                    <td colspan="2" class="course-3">Course 3</td>
-                                    <td></td>
+                                    <td colspan="3" class="course-3">Course 3</td>
                                     <td></td>
                                     <td></td>
                                     <td>...</td>
@@ -190,24 +254,30 @@
 
                         <span>Score: 14%</span>
 
-                        <i style="font-size: 12rem; font-weight: 100; color: var(--border-color);">{</i>
+                        <i class="assoc-symbol">{</i>
 
                         <div class="score-explanation">
-                            <span>Number of hours for students
+                            <span>
+                                feature functions:
+                            </span>
+                            <span><i class="fa fa-info-circle"></i> Number of hours for students
                                 <div class="explain">
-                                    1. Penalty function for a day \( d \), based on the number of class hours \( h_d \):
+                                    <b>1. Penalty function for a day \( d \), based on the number of class hours \( h_d \):</b>
 
                                     \[
                                     \text{penalty}(h_d) = \begin{cases} 
-                                          0 & \text{if } h_d \leq 8 \\
-                                          (h_d - 8)^2 & \text{if } h_d > 8 
+                                          1 & \text{if } h_d \leq 8 \\
+                                          e^{\text{-}k(h_d \, \text{-} \, 8)}& \text{if } h_d > 8, k \in \mathbb{T}^+
                                        \end{cases}
                                     \]
+
+                                    We chose \( k = 0.9 \) for this project.
+                                    <br/><br/>
                                     
-                                    2. Function \(\text{nb hours for students}(tt)\), which uses this penalty for each day in the timetable (TT):
+                                    <b>2. Function \(\text{nb_hours_for_students}(tt)\), which uses this penalty for each day in the timetable (TT):</b>
                                     
                                     \[
-                                    \text{nb hours for students}(tt) = \sum_{d \in \text{days}} \text{penalty}(h_d)
+                                    \text{nb_hours_for_students}(tt) = \sum_{d \in \text{tt}} \text{penalty}(h_d) / | \text{tt} |
                                     \]
                                     
                                     where \( h_d \) represents the total number of class hours on day \( d \).  
@@ -216,11 +286,219 @@
                                 </div>
                             </span>
 
-                            <span>Number of hours for teachers</span>
-                            <span>Size of gaps between hours for students</span>
-                            <span>Size of gaps between hours for teachers</span>
-                            <span>Number of hours on Saturday</span>
-                            <span>Size of the lunch break</span>
+                            <span><i class="fa fa-info-circle"></i> Number of hours for teachers
+                                <div class="explain">
+                                    <b>1. Penalty function for a day \( d \) and a teacher \( d \), based on the number of class hours \( h_d \):</b>
+
+                                    \[
+                                    \text{penalty}(h_{d, t}) = \begin{cases} 
+                                          1 & \text{if } h_d \leq t.nb\_hours\_by\_day \\
+                                          0 & \text{if } h_d > t.nb\_hours\_by\_day 
+                                       \end{cases}
+                                    \]
+                                    
+                                    <b>2. Function \(\text{nb_hours_for_teacher}(tt)\), which uses this penalty for each day in the timetable (TT) <br/>and \(teachers_d\) the list of teachers for day \( d \):</b>
+                                    
+                                    \[
+                                    \text{nb_hours_for_teacher}(tt) = \frac{1}{\left|\:\text{tt}\right|} * \sum_{d \in \text{tt}} \left( \frac{1}{\left|\:teachers_d \right|} * \sum_{t \in teachers_d} \text{penalty}(h_{d, t}) \right) 
+                                    \]
+                                    
+                                    where \( h_{d, t} \) represents the total number of class hours on day \( d \) for teacher \( t \). 
+                                </div>
+                            </span>
+                            <span><i class="fa fa-info-circle"></i> Size of gaps between hours for students
+                                <div class="explain">
+                                    <b>1. Penalty function for a day \( d \), based on the number of gaps between class hours \( g_d \):</b>
+                                    \[
+                                    \text{penalty_nb_gaps}(g_d) = e^{-\frac{g_d^2}{2 * \sigma^2}}
+                                    \]
+                                    Given that each time slot represents 30 minutes from 8:00 to 20:00, there are indeed 24 slots in a day. The maximum of possible gaps is 22 when there is a course at two extreme ends (8:00 and 20:00) and all other slots are empty. \( \sigma \in ]0, 22] \), we choose \( \sigma = 8 \) 
+                                    <br/><br/>
+                                    <img src="data/img/aco/penalty_func_for_gaps.png" style="width: min(max(300px, 35vw), 500px);" alt="Penalty function for gaps in a day">
+                                    <br/><br/>
+                                    
+                                    <b>2. Penalty function for a day \( d \), and a gap index \( i \) in the day \( d \), for exemple if the gap is between 8:30 and 9:00, the index is 1:</b>
+
+                                    \[
+                                    \text{penalty_gap_position}(g_{d, i}) = 1 - \frac{abs(i - midday)}{midday}
+                                    \]
+                                    where \( midday = \frac{nb\_slots}{2} = 12 \). The idear is to penalize gaps that are far from the middle of the day because they need less operations to be filled.
+                                    <br/><br/>
+                                    <b>3. Function \(\text{nb_gaps_for_students}(tt)\), which uses these penalties for each day in the timetable (TT):</b>
+                                    \[
+                                    \text{nb_gaps_for_students}(tt) = \frac{1}{\left|\:\text{tt}\right|} * \sum_{d \in \text{tt}} \left( \beta_1 * \text{penalty_nb_gaps}(g_d) + \frac{\beta_2}{\left|\,g_d\right|} * \sum_{i}^{g_d} \text{penalty_gap_position}(g_{d, i}) \right) 
+                                    \]
+                                    In this function, \( \beta_1 \) and \( \beta_2 \) are hyperparameters that we set to 0.75 and 0.25 respectively.
+                                </div>
+                            </span>
+                            <span><i class="fa fa-info-circle"></i> Size of gaps between hours for teachers
+                                <div class="explain">
+                                    <b>1. Penalty function for a day \( d \), based on the number of gaps between class hours \( g_d \):</b>
+                                    \[
+                                    \text{penalty_nb_gaps}(g_d) = e^{-\frac{g_d^2}{2 * \sigma^2}}
+                                    \]
+                                    Given that each time slot represents 30 minutes from 8:00 to 20:00, there are indeed 24 slots in a day, with up to 22 gaps possible if a class is placed at only two extreme ends (8:00 and 20:00) and all other slots are empty. \( \sigma \in ]0, 22] \), we choose \( \sigma = 8 \) 
+                                    <br/><br/>
+                                    <img src="data/img/aco/penalty_func_for_gaps.png" style="width: min(max(300px, 35vw), 500px);" alt="Penalty function for gaps in a day">
+                                    <br/><br/>
+                       
+                                    <b>3. Function \(\text{nb_gaps_for_students}(tt)\), which uses these penalties for each day in the timetable (TT):</b>
+                                    \[
+                                    \text{nb_gaps_for_students}(tt) = \frac{1}{\left|\:\text{tt}\right|} * \sum_{d \in \text{tt}} \text{penalty_nb_gaps}(g_d)
+                                    \]
+                                </div>
+                            </span>
+                            <span><i class="fa fa-info-circle"></i> Number of hours on Saturday
+                                <div class="explain">
+                                    <b>1. Penalty function for saturday \( d \), based on the number of slots (half hours) \( h_d \):</b>
+                                    \[
+                                    \text{penalty_saturday_hours}(g_d) = e^{-0.3 * h_d}
+                                    \]
+                                    I've chosen 0.3 as a hyperparameter to penalize fast the number of hours on saturday.
+                                    <br/><br/>
+                                    <img src="data/img/aco/penalty_func_sat_courses.png" style="width: min(max(300px, 35vw), 500px);" alt="Penalty function for gaps in a day">
+                                </div>
+                            </span>
+                            <span><i class="fa fa-info-circle"></i> Size of the lunch break
+                            <div class="explain">
+                                <b>1. Penalty function for a day \( d \), based on the number of slots (half hours) free between 11:30 and 13:30 \( h_d \):</b>
+                                \[
+                                \text{penalty_lunch_break}(g_d) = \frac{1}{e^{-5(h_d - 0.9) + 1}}
+                                \]
+                                I used a sigmoid function to penalize if the lunch break is smaller than an hour. The hyperparameter are adjusted to fit the problem.
+                                <br/><br/>
+                                <img src="data/img/aco/penalty_func_lunchtime.png" style="width: min(max(300px, 35vw), 500px);" alt="Penalty function for gaps in a day">
+                            </div>
+                            </span>
+                        </div>
+                    </div>
+
+                    <p class="step-header">
+                        We consider \( \Omega \) as the set of all possible association of (day, hour of beginning, course) for a week. <br/>
+                        If we consider \( \text{tt} \in \mathbb{T}_{week} \) and \(\Omega_{tt} = \bigcup_{d \in \text{tt}, h \in \text{tt}_d} \{d, h, tt_{d,h}\} \), then \(\Omega_{tt} \subseteq \Omega\).<br/>
+                        It follow that the score function is also applicable to the subset \(\Omega_{tt}\): \( score(tt) = score(\Omega_{tt}) \)
+                        <br/><br/>
+
+                        \(\Omega_{i} = \{\alpha_1, \alpha_2, ..., \alpha_n\}\) with \(\alpha_i \in \Omega\)<br/>
+                        We define \( P_i \) the probability to choose \( \alpha_i \) and \( \Omega^{\displaystyle \prime} \) the association between know score and \(\alpha_i\) (also named the learning/pheromone table). <br/>
+                        In fact, every time we generate a timetable we had the score associated with every \( \alpha_i \) in \( \Omega^{\displaystyle \prime} \).
+                        \[
+                            P_i = \gamma * impact + \varepsilon * \Omega^{\displaystyle \prime}_i
+                        \]
+                        where \( \gamma \) and \( \varepsilon \) are hyperparameters, \( \Omega^{\displaystyle \prime}_i \) is the average score associated with \(\alpha_i\).
+                        <br>
+                        \(\varepsilon = 1 - \gamma\) we start the algorithm with \( \gamma = 1 \) and \(\Omega^{\displaystyle \prime}_i = \{\} \). After each iteration, we incrase \( \varepsilon \).
+                        <br/>
+                        The impact function is determinist and represents how many other \(\alpha \) will be not available if we choose \(\alpha_i\). For exemple if we choose a course on monday at 8:00, we can't choose another course at 8:00 on monday, so we will impact all the other association on monday at 8:00 as well as the association with the same course. The impact is considered more important if an impacted association don't has a lot of other possibilities.
+
+                        <br/><br/>
+                        The \(\alpha_i\) selected is the result of a random choice based on the probability distribution \( P \).
+                    </p>
+                    <div class="step 2">
+                        <p>
+                            As illustration, we will place a new course (Course 4) of 1 hour in the timetable.
+                        </p>
+                        <div class="block">
+                            <p>
+                                <b>Step 1: Find the available slots for the course</b>
+                                <br/> To simplify the calculation, we will limite the availables slots to 3, we will consider other slots as not available due to the availability of the teachers (for exemple).
+                            </p>
+                            <table class="timetable">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>08:00</th>
+                                        <th>08:30</th>
+                                        <th>09:00</th>
+                                        <th>09:30</th>
+                                        <th>10:00</th>
+                                        <th>10:30</th>
+                                        <th>...</th>
+                                        <th>20:00</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Monday</td>
+                                        <td colspan="2" class="course-1">Course 1</td>
+                                        <td class="free-slot"></td>
+                                        <td class="not-free"></td>
+                                        <td colspan="2" class="course-2">Course 2</td>
+                                        <td>...</td>
+                                        <td class="not-free"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tuesday</td>
+                                        <td class="not-free"></td>
+                                        <td class="not-free"></td>
+                                        <td class="not-free"></td>
+                                        <td class="free-slot"></td>
+                                        <td class="not-free"></td>
+                                        <td class="not-free"></td>
+                                        <td>...</td>
+                                        <td class="not-free"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>...</td>
+                                        <td class="not-free"></td>
+                                        <td class="not-free"></td>
+                                        <td class="not-free"></td>
+                                        <td class="not-free"></td>
+                                        <td class="not-free"></td>
+                                        <td class="not-free"></td>
+                                        <td>...</td>
+                                        <td class="not-free"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday</td>
+                                        <td class="not-free"></td>
+                                        <td colspan="3" class="course-3">Course 3</td>
+                                        <td class="free-slot"></td>
+                                        <td class="not-free"></td>
+                                        <td>...</td>
+                                        <td class="not-free"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="block">
+                            <br/>
+                            <br/>
+                            <p>
+                                We will define \( \gamma = 0.1 \) and \( \varepsilon = 0.9 \) for this example.
+                                <br/>
+                                The information about the Course 4 in \(\Omega^{\displaystyle \prime}\) are: <br/>
+                                \(\{Monday, 9:00, Course 4\} \rightarrow 0.7\) <br/>
+                                \(\{Tuesday, 09:30, Course 4\} \rightarrow 0.55\) <br/>
+                                \(\{Saturday, 10:00, Course 4\} \rightarrow 0.2\) <br/>
+                                <br/>
+                                Because there is no other courses to place, the impact function return 1 for each association.
+                                <br/>
+                                <b>Step 2: calculate the probability distribution</b>
+                                <br/>
+                                <span class="large">
+                                \[
+                                    P = \begin{cases}
+                                        0.1 * 1 + 0.9 * 0.7 = 0.73 & \text{if we choose Monday, 9:00} \\
+                                        0.1 * 1 + 0.9 * 0.55 = 0.595 & \text{if we choose Tuesday, 09:30} \\
+                                        0.1 * 1 + 0.9 * 0.2 = 0.28 & \text{if we choose Saturday, 10:00} \\
+                                    \end{cases}
+                                \]
+                                </span>
+                                <span class="small">
+                                \[
+                                    P = \begin{cases}
+                                        0.1 * 1 + 0.9 * 0.7 = 0.73 \\
+                                        0.1 * 1 + 0.9 * 0.55 = 0.595 \\
+                                        0.1 * 1 + 0.9 * 0.2 = 0.28 \\
+                                    \end{cases}
+                                \]
+                                </span>
+
+                                Finally, we do a random choice based on the probability distribution \( P \), in this case, it's most likely that the course will be placed on Monday at 9:00.
+                                <br/><br/>
+                                The final step (when all the courses are set) is to execute the neighborhood optimization function to refine the timetable. In this project i created a function that can be executed in \( O(n) \) where \( n \) is the number of placed courses in the worst case.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -233,14 +511,23 @@
                             <div class="imgs-wrapper">
                                 <img src="data/img/sql-r/img1.png" class="active"> <!-- Image 1 -->
                                 <img src="data/img/sql-r/img2.png"> <!-- Image 2 -->
-                                <img src="data/img/sql-r/img3.png"> <!-- Image 3 -->
-                                <img src="data/img/sql-r/img4.png"> <!-- Image 4 -->
+                                <img src="data/img/sql-r/img3.png">
+                                <img src="data/img/sql-r/img4.png">
+                                <img src="data/img/sql-r/img5.png">
                             </div>
                         </div>
 
                         <div class="left-part">
-                            <h4>SQL Tool</h4>
-
+                            <h4>SQL Request</h4>
+                            <p>
+                                During my work-study program, I developed SQLR, a powerful <u>SQL query management tool</u>, to improve data accessibility and usability.
+                                <br/><br/>
+                                The tool was designed using Django and supports MySQL and SQL Server databases. SQLR introduces a file explorer for query organization and a streamlined query builder, simplifying SQL syntax management. Additionally, SQLR supports variable creation and API integration, enabling dynamic, multi-source data queries.
+                                <br/><br/>
+                                This tool allows users to efficiently manage complex queries and enhances data accessibility with an intuitive interface. SQLR abstracts the database language after connection, providing a unified interface for both MySQL and SQL Server users. 
+                                <br/><br/>
+                                Finally, SQLR offers a comprehensive and optimized solution for data management and query execution.
+                            </p>
                             <div class="tags-wrapper">
                                 <span>Python</span>
                                 <span>SQL</span>
@@ -248,11 +535,41 @@
                                 <span>Django</span>
                             </div>
 
-                            <h6 onclick="toggle_showcase(this)">More information</h6>
+                            <h6 onclick="toggle_showcase('sqlr-showcase')">More information</h6>
                         </div>
                     </div>
                 </div>
-                
+
+                <div class="algo-showcase" id="sqlr-showcase">
+                    <i class="fa fa-times" onclick="toggle_showcase('sqlr-showcase')"></i>
+                    <p class="step-header">
+                        SQLR is a web application that allows users to execute SQL queries on a MySQL or SQL Server database. The software is build in two layers, the first one is used to save the generic queries as well as the database connection information. The second layer is the query builder that translate the user's query into a SQL query.
+
+                        <br/><br/>
+                        SQLR offer the possibility to use variables editables by the user before the execution of the query. The software is by default protected against SQL injection and other security issues, however, during the creation of a request, the user can specify to inject the variable in order to create dynamic queries or for other reasons. When a variable is injected, a function is called to check the content of the variable and to prevent any security issue.
+                        <br>
+                        The user can also create python function that will be executed before the query to prepare the variables, for exemple to format a date or to lowercase etc.
+                        <br/><br/>
+
+                        The more advanced functionnality is the imbrication of queries (using CTE). In fact, the user can create a CTE from an other SQLR query. This allow to create complex queries and to use the result of a query in an other one. If a query in a CTE have variable, the user can map the variable of the CTE to the variable of the main query or give them a default value.
+                        <br/>
+                        The query imbrication is manage by a tree, there is no limit of imbrication. The tree allow the software to optimize the imbrication and to execute the queries in the right order.
+                    </p>
+                    <div class="step 1">
+                        <p>
+                            In this exemple we will consider a query Z that use the result of the query B, C and D. Theses queries use the result of the query A.<br/>
+                            Query Z has two parameters,<br/>
+                            Queries A, B, C and D have one parameter.<br/>
+                            The follow schema represent the tree of the imbrication.
+                        </p>
+                        <div class="block">
+                            <img src="data/img/sql-r/tree.png" alt="Tree of imbrication" style="width: min(max(300px, 60vw), 1200px);">
+
+                            <p>
+                                The tree is used to optimize the imbrication of the queries. In this case, the query A will be executed first, in two different variation, the first one with the parameter P.Z.1 and the second one with the parameter P.Z.2.
+                            </p>
+                        </div>
+                </div>
             </div>
 
             <div class="puissance-4">
@@ -466,9 +783,18 @@
             });
         });
 
+        let layer_start_y = []
+
         window.addEventListener('resize', () => {
             document.querySelectorAll('.background-circle').forEach(circle => {
                 update_circle(circle);
+            });
+
+            layer_start_y = []
+            let index = 0
+            layers.forEach(layer => {
+                layer_start_y.push(layer.getBoundingClientRect().top - window.innerHeight + window.scrollY - 400 * index + 100);
+                index++;
             });
         });
 
@@ -499,27 +825,28 @@
         const triggers = document.querySelectorAll('.algo-showcase span:has( > .explain)');
         triggers.forEach(trigger => {
             trigger.addEventListener('mouseover', () => {
-                setTimeout(() => {
-                    let explain = trigger.querySelector('.explain');
-                    // check if explain don't overflow the screen
-                    if (explain.getBoundingClientRect().right > window.innerWidth) {
-                        explain.style.right = "10px";
-                    }
-                }, 10);
+                let explain = trigger.querySelector('.explain');
+                // check if explain don't overflow the screen
+                if (explain.getBoundingClientRect().right > window.innerWidth * 0.98) {
+                    explain.style.right = `${window.innerWidth * 0.02}px`;
+                }
+
+                if (explain.getBoundingClientRect().bottom > window.innerHeight * 0.98) {
+                    explain.style.bottom = `${window.innerHeight * 0.02}px`;
+                }
             });
         });
 
-        function toggle_showcase(h6) {
-            h6.nextElementSibling.classList.toggle('active');
-            h6.innerHTML = h6.innerHTML === 'More information' ? 'Less information' : 'More information';
+        function toggle_showcase(showcase_id) {
+            showcase = document.getElementById(showcase_id)
+            showcase.classList.toggle('active');
         }
 
         let currentLayer = -1; // Calque actuel
         const layers = Array.from(document.querySelectorAll('.project'));
         
-        let layer_start_y = []
         let index = 0
-        layers[0].style.marginTop = '200px';
+        layers[0].style.marginTop = '4svh';
         layers[0].style.transform = `translateY(0)`;
 
         layers.forEach(layer => {
