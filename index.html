@@ -524,7 +524,7 @@
                                 <br/><br/>
                                 The tool was designed using Django and supports MySQL and SQL Server databases. SQLR introduces a file explorer for query organization and a streamlined query builder, simplifying SQL syntax management. Additionally, SQLR supports variable creation and API integration, enabling dynamic, multi-source data queries.
                                 <br/><br/>
-                                This tool allows users to efficiently manage complex queries and enhances data accessibility with an intuitive interface. SQLR abstracts the database language after connection, providing a unified interface for both MySQL and SQL Server users. 
+                                This tool allows users to manage efficiently complex queries and enhances data accessibility with an intuitive interface. SQLR abstracts the database language after connection, providing an unified interface for both MySQL and SQL Server users. 
                                 <br/><br/>
                                 Finally, SQLR offers a comprehensive and optimized solution for data management and query execution.
                             </p>
@@ -543,30 +543,30 @@
                 <div class="algo-showcase" id="sqlr-showcase">
                     <i class="fa fa-times" onclick="toggle_showcase('sqlr-showcase')"></i>
                     <p class="step-header">
-                        SQLR is a web application that allows users to execute SQL queries on a MySQL or SQL Server database. The software is build in two layers, the first one is used to save the generic queries as well as the database connection information. The second layer is the query builder that translate the user's query into a SQL query.
+                        SQLR is a web application that allows users to execute SQL queries on a MySQL or SQL Server database. The software is build in two layers, the first one is used to save the generic queries as well as the database connection information. The second layer is the query builder that translates the user's query into a SQL query.
 
                         <br/><br/>
-                        SQLR offer the possibility to use variables editables by the user before the execution of the query. The software is by default protected against SQL injection and other security issues, however, during the creation of a request, the user can specify to inject the variable in order to create dynamic queries or for other reasons. When a variable is injected, a function is called to check the content of the variable and to prevent any security issue.
+                        SQLR offers the possibility to use variables, editabled by the user before the execution of the query. The software is by default protected against SQL injection and other security issues, however, during the creation of a request, the user can specify to inject a variable in order to create dynamic queries or for other reasons. When a variable is injected, a function is called to check the content of the variable and to prevent any security issue.
                         <br>
-                        The user can also create python function that will be executed before the query to prepare the variables, for exemple to format a date or to lowercase etc.
+                        The user can also create python functions that will be executed before the query to prepare the variables, for exemple to format a date or to lowercase etc.
                         <br/><br/>
 
-                        The more advanced functionnality is the imbrication of queries (using CTE). In fact, the user can create a CTE from an other SQLR query. This allow to create complex queries and to use the result of a query in an other one. If a query in a CTE have variable, the user can map the variable of the CTE to the variable of the main query or give them a default value.
+                        The most advanced functionnality is the imbrication of queries (using CTE). In fact, the user can create a CTE from an other SQLR query. This allows to create complex queries and to use the result of a query in an other one. If a query in a CTE has variables, the user can map the variables of the CTE to the variables of the main query or give them a default value.
                         <br/>
-                        The query imbrication is manage by a tree, there is no limit of imbrication. The tree allow the software to optimize the imbrication and to execute the queries in the right order.
+                        The query imbrication is managed by a tree, there is no limit of imbrication. The tree allows the software to optimize the imbrications and to execute the queries in the right order.
                     </p>
                     <div class="step 1">
                         <p>
-                            In this exemple we will consider a query Z that use the result of the query B, C and D. Theses queries use the result of the query A.<br/>
+                            In this exemple we will consider a query Z that uses the result of the queries B, C and D. These queries use the result of the query A.<br/>
                             Query Z has two parameters,<br/>
                             Queries A, B, C and D have one parameter.<br/>
-                            The follow schema represent the tree of the imbrication.
+                            The following schema represents the tree of the imbrication.
                         </p>
                         <div class="block">
                             <img src="data/img/sql-r/tree.png" alt="Tree of imbrication" style="width: min(max(300px, 60vw), 1200px);">
 
                             <p>
-                                The tree is used to optimize the imbrication of the queries. In this case, the query A will be executed first, in two different variation, the first one with the parameter P.Z.1 and the second one with the parameter P.Z.2.
+                                The tree is used to optimize the imbrication of the queries. In this case, the query A will be executed first, in two different variations, the first one with the parameter P.Z.1 and the second one with the parameter P.Z.2.
                             </p>
                         </div>
                 </div>
@@ -575,19 +575,52 @@
             <div class="puissance-4">
                 <div class="connect4 project">
                     <div class="inner-wrapper">
-                        <div class="connect4-grid"></div>
+                        <div class="connect4-grid">
+                            <span class="cell p1" 
+                                style="top: calc((100% / 6) * 5); left: calc((100% / 7) * 2);">
+                            </span>
+                            <span class="cell p1"
+                                style="top: calc((100% / 6) * 4); left: calc((100% / 7) * 1);">
+                            </span>
+                            <span class="cell p1"
+                                style="top: calc((100% / 6) * 4); left: calc((100% / 7) * 4);">
+                            </span>
+                            <span class="cell p1"
+                                style="top: calc((100% / 6) * 4); left: calc((100% / 7) * 3);">
+                            </span>
+                            <span class="cell p1"
+                                style="top: calc((100% / 6) * 4); left: calc((100% / 7) * 2);">
+                            </span>
+                            <span class="cell p2"
+                                style="top: calc((100% / 6) * 5); left: calc((100% / 7) * 1);">
+                            </span>
+                            <span class="cell p2"
+                                style="top: calc((100% / 6) * 5); left: calc((100% / 7) * 4);">
+                            </span>
+                            <span class="cell p2"
+                                style="top: calc((100% / 6) * 3); left: calc((100% / 7) * 4);">
+                            </span>
+                            <span class="cell p2"
+                                style="top: calc((100% / 6) * 5); left: calc((100% / 7) * 3);">
+                            </span>
+                        </div>
 
                         <div class="left-part">
                             <h4>Connect 4</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                <br>
-                                <br>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                The grid in this Connect 4 implementation is vectorized, allowing for efficient updates by recalculating only neighboring vectors as tokens are added. This approach enables rapid win-condition verification, requiring checks on a small subset of vectors rather than a full grid scan.
+                                <br/><br/>
+                                This vector-based structure also strengthens the AI algorithms:
+                                <br/>
+                                - The first bot employs a basic greedy algorithm, functioning as an      "easy" level opponent. <br/>
+                                - The second bot uses a Monte Carlo method to explore possible moves.<br/>
+                                - The third bot leverages an advanced Monte Carlo approach with a projection system that identifies high-priority cells, focusing on strategically important moves. <br/>
+                                <br/>                                
+                                The project is fully developed in C#.
                             </p>
 
                             <div class="tags-wrapper">
-                                <span>JS / C#</span>
+                                <span>C#</span>
                                 <span>Machine learning</span>
                             </div>
                         </div>
@@ -622,6 +655,7 @@
                         International program focused on Data Science, Machine Learning, and 
                         Artificial Intelligence.
                     </p>
+                    <span class="date">Sept. 2024 - Aug. 2025</span>
                 </div>
                 
                 
@@ -635,6 +669,7 @@
                         <u>Courses completed</u>: Mathematical Modeling, Decision Support, Advanced Programming, 
                         Algorithmic Quality, Advanced Virtualization
                     </p>
+                    <span class="date">Sept. 2021 - Aug. 2024</span>
                 </div>
                 
                 <div class="block scroll-pop-anim">
@@ -643,6 +678,7 @@
                     <p>
                         Graduated with Honors
                     </p>
+                    <span class="date">Sept. 2018 - Aug. 2021</span>
                 </div>
                 
                 <div class="block scroll-pop-anim">
@@ -651,6 +687,7 @@
                     <p>
                         Graduated with High Honors
                     </p>
+                    <span class="date">Sept. 2020 - Oct. 2021</span>
                 </div>
                 
             </div>
@@ -668,6 +705,8 @@
                         <u>Skills developed</u>: software programming, agile methodology, data analysis, 
                         autonomy, Python (Django framework) and SQL.                        
                     </p>
+
+                    <span class="date">Sept. 2022 - Aug. 2024</span>
                 </div>
                 
                 <div class="block scroll-pop-anim">
@@ -679,7 +718,18 @@
                         font-style: italic;">website's interface</a> 
                         based on mockups. Deployed a new version of the CMS.
                     </p>
+                    <span class="date">Summer 2022</span>
                 </div>
+
+                <div class="block scroll-pop-anim">
+                    <h4>Logistics Assistant</h4>
+                    <h5>Luzaka - E-commerce (Malaunay, France)</h5>
+                    <p>
+                        I assisted with unloading packages from trucks, organizing stock in designated 
+                        areas (picking), and preparing orders for dispatch. 
+                        Ensured efficient workflow and maintained a clean, organized workspace.
+                    </p>
+                    <span class="date">Summer 2021</span>
             </div>
         </section>
 
