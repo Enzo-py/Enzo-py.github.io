@@ -5,10 +5,25 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/ebd4e3dd01.js" crossorigin="anonymous"></script>
 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="description" content="Enzo Pinchon's personal website"> -->
-    <meta name="keywords" content="Enzo Pinchon, Data Science, Artificial Intelligence, Machine Learning, Python, SQL, Django, D3.js">
+    <meta name="description" content="Enzo Pinchon - Portfolio showcasing projects in Data and Artificial Intelligence.">
+    <meta name="keywords" content="Data Science, Artificial Intelligence, Machine Learning, Portfolio, Projects, Data Analysis, Python, Algorithms, Enzo Pinchon">
     <meta name="author" content="Enzo Pinchon">
+    
+    <link rel="icon" href="data/img/logo.ico" type="image/x-icon">
+    <title>Enzo Pinchon - Data and AI Portfolio</title>
+   
+    <meta property="og:title" content="Enzo Pinchon - Data and AI Portfolio">
+    <meta property="og:description" content="Explore my projects in Data Science and Artificial Intelligence.">
+    <meta property="og:image" content="data/img/cover.jpg">
+    <meta property="og:url" content="https://www.enzo-pinchon.com">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Enzo Pinchon - Data and AI Portfolio">
+    <meta name="twitter:description" content="Explore my projects in Data Science and Artificial Intelligence.">
+    <meta name="twitter:image" content="data/img/cover.jpg">
+
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 </head>
 <body>
@@ -40,9 +55,19 @@
                 <img src="data/img/photo.jpeg" alt="Enzo Pinchon" class="scroll-pop-anim">
 
                 <p class="scroll-pop-anim">
-                    What immediately drew me to this field is the ability to create something with my own hands to solve complex problems. Striking the right balance between creativity and precision to develop innovative and clear solutions.
+                    I am currently pursuing a Master’s in Data and Artificial Intelligence at IP Paris, 
+                    eager to explore how technology can drive meaningful change. I will be available for 
+                    an internship starting in May 2025 to apply my knowledge and skills in a practical 
+                    setting.
                     <br/><br/>
-                    Currently pursuing a Master's in Data and Artificial Intelligence at IP Paris, I am discovering new algorithmic techniques with the goal of solving ever more captivating problems!
+                    Having always been enthusiastic about science, I am excited to explore how artificial 
+                    intelligence can solve complex challenges. What captivates me most about this 
+                    discipline is the opportunity to build tangible solutions. I enjoy blending creative 
+                    approaches with analytical thinking to develop innovative and practical results.
+                    <br/><br/>
+                    As I delve into new algorithmic techniques, I look forward to tackling increasingly 
+                    intriguing problems and contributing meaningfully to the ever-evolving landscape of 
+                    data and artificial intelligence.
                 </p>
             </div>
 
@@ -906,6 +931,7 @@
         layers[layers.length - 1].style.paddingBottom = 0;
         layers[layers.length - 1].style.height = '95svh';
         layers[layers.length - 1].style.maxHeight = '55vw';
+        layers[layers.length - 1].style.minHeight = 'fit-content';
 
         function handleScroll() {
             let scrollY = window.scrollY;

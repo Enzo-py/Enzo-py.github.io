@@ -461,7 +461,6 @@ section.projects {
 
 section.projects .project-displayer {
     width: fit-content;
-    min-width: 320px;
     position: relative;
     box-sizing: content-box;
     margin-top: 20px;
@@ -495,7 +494,6 @@ section.projects .sql-tool .project-displayer { box-shadow: 1px 2px 40px 1px var
 section.projects .project .inner-wrapper {
     max-width: 1840px;
     width: 100%;
-    min-width: 320px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -513,6 +511,7 @@ section.projects .project .inner-wrapper {
     section.projects .project .inner-wrapper {
         flex-direction: column;
         row-gap: 20px;
+        padding: 10px;
     }
 
     section.projects .project .left-part {
@@ -590,7 +589,9 @@ section.projects .tags-wrapper span {
     color: var(--text-color);
     font-size: 0.9rem;
     font-weight: 300;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 2px;
     padding: 4px;
     text-transform: uppercase;
@@ -900,7 +901,6 @@ section.experience .tab {
     backdrop-filter: blur(8px);
     max-width: 65vw;
     width: 100%;
-    min-width: 320px;
     margin: 0 auto;
     padding: 34px;
     position: relative;
@@ -949,9 +949,14 @@ section.experience .tab .block:nth-child(even) {
 }
 
 @media screen and (max-width: 700px) {
+    section.experience {
+        padding: 0;
+    }
+
     section.experience div.tab div.block:nth-child(n) {
         padding-left: 20px;
         padding-right: 0;
+        margin-bottom: 20px;
     }
     
     section.experience div.tab div.block:nth-child(n)::before {
@@ -1090,3 +1095,30 @@ section.contact .contact-content a i {
     }
 }
 
+@media screen and (max-width: 425px) {
+    section.home {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        min-height: fit-content;
+    }
+
+    section.about-me .competitions-wrapper div.album {
+        flex-direction: column;
+    }
+
+    section.about-me .competitions-wrapper div.album img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    section.about-me .skills {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    section.about-me .skills > div {
+        width: 100%;
+    }
+}
