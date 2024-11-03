@@ -855,7 +855,7 @@ section.projects p {
 }
 
 section.experience {
-    margin-top: 28svh;
+    margin-top: -600px;
 }
 
 section.experience .types {
