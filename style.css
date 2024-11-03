@@ -1,33 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-/* .libre-baskerville-regular {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.libre-baskerville-bold {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.libre-baskerville-regular-italic {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: italic;
-} */
-
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.noto-serif-<uniquifier> {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-} https://www.realtimecolors.com/?colors=1a1416-f2eeef-49373d-b4a09d-866f65&fonts=Libre%20Baskerville-Noto%20Serif*/
+/* https://www.realtimecolors.com/?colors=1a1416-f2eeef-49373d-b4a09d-866f65&fonts=Libre%20Baskerville-Noto%20Serif*/
   
 body {
     margin: 0;
