@@ -33,11 +33,11 @@ body {
     --kairos-text-color: #e1dedb;
     --kairos-box-shadow-color: #051f3c;
     
-    --sql-tool-color: linear-gradient(to right, #ffdd1a, #f59f0b);
+    --sql-tool-color: linear-gradient(to right, #ffdd1a, #ffc800);
     --sql-tool-text-color: #1a1416;
     --sql-tool-box-shadow-color: #b88805;
 
-    --connect4-color: linear-gradient(to right, #22382a, #112419);
+    --connect4-color: linear-gradient(to right, #22382a, #164633);
     --connect4-text-color: #e1dedb;
     --connect4-box-shadow-color: #13201a;
     --connect4-grid-color: #bdbfc4a3;
@@ -448,7 +448,7 @@ section.projects .project {
     justify-content: center;
     align-items: center;
     transition: all 0.6s cubic-bezier(0,-0.06, 0.45, 1);
-    filter: drop-shadow(rgb(33, 33, 33) 2px -4px 10px);
+    filter: drop-shadow(#333 0px -2px 3px);
     transform: translateY(200px);
 }
 
