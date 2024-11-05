@@ -246,6 +246,7 @@ section.about-me .about-me-content > img {
     border-radius: 12px;
     box-shadow: 2px 1px 10px 0px var(--box-shadow-color);
     border: solid 2px var(--border-color);
+    height: fit-content;
 }
 
 section.about-me .about-me-content p {
