@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
     <link rel="preload" href="https://kit.fontawesome.com/ebd4e3dd01.js" as="script">
     <script src="https://kit.fontawesome.com/ebd4e3dd01.js" crossorigin="anonymous"></script>
-
+    <script src="toolbox.bundle.js"></script>
 
     <title>Enzo Pinchon - Data and AI Portfolio</title>
    
@@ -64,13 +64,13 @@
             <h3>About me</h3>
 
             <div class="about-me-content">
-                <img src="data/img/photo.webp" alt="Enzo Pinchon" class="scroll-pop-anim">
+                <img src="data/img/image.png" alt="Enzo Pinchon" class="scroll-pop-anim">
 
                 <p class="scroll-pop-anim">
                     I am currently pursuing a Master’s in Data and Artificial Intelligence at Institut 
                     Polytechnique of Paris, eager to explore how technology can drive meaningful change. 
-                    I will be available for an internship starting in May 2025 to apply my knowledge and 
-                    skills in a practical setting.
+                    I will be available for an internship starting in Mars 2026 to apply my knowledge and 
+                    skills in a practical setting. I'm also looking for PhD opportunities for September 2026.
                     <br/><br/>
                     Having always been enthusiastic about science, I am excited to explore how artificial 
                     intelligence can solve complex challenges. What captivates me most about this 
@@ -108,564 +108,308 @@
             </div>
             <div class="background-circle accent scroll-pop-anim" style="right: 10px; width: 15svh; position: relative;"></div>
 
-            <div class="competitions">
+            <section class="competitions" id="competitions">
                 <h4>Competitions</h4>
-                <div class="competitions-wrapper">
-                    <div class="competition">
-                        <h5>Hauts-de-France programming contest (2024)
-                            <a href="https://www.univ-artois.fr/toutes-les-actualites/competition-de-programmation-des-hauts-de-france">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </h5>
-                        <span>Regional contest in team of 3. Problem solving and algorithmic.</span>
-                        <span>3rd place</span>
-                    </div>
-                    <div class="competition">
-                        <h5>Code Game Jam (2024)
-                            <a href="https://codegamejam.extragames.fr/editions-precedentes/edition-8-soon/">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </h5>
-                        <span>National contest in large team organized by Montpelier University. Creation of a video game in 36 hours.</span>
-                        <span>2nd place<span>
-                    </div>
-                    <div class="competition">
-                        <h5>Hackton by Zama, Hugging Face & Entrepreneur First (2024)
-                            <a href="https://huggingface.co/ppaihack">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </h5>
-                        <span>Selective internationale contest in team (2 - 4) on AI with Homomorphic Encryption. 36 hours.</span>
-                        <span>No ranking</span>
-                    </div>
 
-                    <div class="album">
-                        <img src="data/img/contest/arc.webp" alt="Hauts-de-France programming contest">
-                        <img src="data/img/contest/ppaih1.webp" alt="ppaih day 1">
-                        <img src="data/img/contest/ppaih2.webp" alt="ppaih day 2">
+                <div class="competitions-grid">
+                    <!-- 1) Tech Europe x Open AI -->
+                    <article class="comp-card" data-size="wide" data-href="https://www.univ-artois.fr/toutes-les-actualites/competition-de-programmation-des-hauts-de-france">
+                    <div class="carousel" data-interval="4000">
+                        <img src="data/img/contest/hackaton-all.jpeg" alt="{Tech Europe} x Open AI Hackathon" loading="lazy">
+                        <img src="data/img/contest/hackaton-welcom.jpeg" alt="{Tech Europe} x Open AI Hackathon" loading="lazy">
+                        <img src="data/img/contest/hackaton-end.JPG" alt="{Tech Europe} x Open AI Hackathon" loading="lazy">
+                        <img src="data/img/contest/chess-board.jpeg" alt="{Tech Europe} x Open AI Hackathon" loading="lazy">
+
+                        <!-- Ajoute d'autres visuels si tu veux -->
                     </div>
+                    <header class="meta">
+                        <h5>{Tech Europe} x Open AI Hackathon (2025)</h5>
+                        <p><span class="tag tag--gold">2nd place</span> Team of 4 - Software using AI</p>
+                    </header>
+                    </article>
+
+
+                    <!-- 2) Zama × HF × EF Hackathon -->
+                    <article class="comp-card" data-size="square" data-href="https://huggingface.co/ppaihack">
+                    <div class="carousel" data-interval="3500">
+                        <img src="data/img/contest/ppaih2.webp" alt="Zama HF EF Hackathon" loading="lazy">
+                        <img src="data/img/contest/ppaih3.png" alt="Zama HF EF Hackathon" loading="lazy">
+                        <img src="data/img/contest/ppaih4.png" alt="Zama HF EF Hackathon" loading="lazy">
+                        <img src="data/img/contest/ppaih1-1.jpg" alt="Zama HF EF Hackathon" loading="lazy">
+                    </div>
+                    <header class="meta">
+                        <h5>Hackathon by Zama, Hugging Face & Entrepreneur First (2024)</h5>
+                        <p><span class="tag tag--neutral">Participation</span> Team of 3 - AI with Homomorphic Encryption</p>
+                    </header>
+                    </article>
+
+                    <!-- 3) Hauts-de-France -->
+                    <article class="comp-card" data-size="large" data-href="https://www.univ-artois.fr/toutes-les-actualites/competition-de-programmation-des-hauts-de-france">
+                    <div class="carousel" data-interval="4000">
+                        <img src="data/img/contest/arc.webp" alt="Hauts-de-France programming contest" loading="lazy">
+                        <!-- Ajoute d'autres visuels si tu veux -->
+                    </div>
+                    <header class="meta">
+                        <h5>Hauts-de-France programming contest (2024)</h5>
+                        <p><span class="tag tag--gold">3rd place</span> Team of 3 - Algorithms & Mathematics</p>
+                    </header>
+                    </article>
+
+                    <!-- 2) Code Game Jam -->
+                    <article class="comp-card" data-size="wide2" data-href="https://codegamejam.extragames.fr/editions-precedentes/edition-8-legende-etheree/">
+                    <div class="carousel" data-interval="3500">
+                        <img src="data/img/contest/cult-of-arkhos.png" alt="Code Game Jam" loading="lazy">
+                    </div>
+                    <header class="meta">
+                        <h5>Code Game Jam (2024)</h5>
+                        <p><span class="tag tag--gold">2nd place</span> Large team - Game Development</p>
+                    </header>
+                    </article>
+
+
+                    <!-- Ajoute facilement de nouvelles tuiles en copiant <article> -->
                 </div>
+
+                <!-- Lightbox minimal -->
+                <div class="lightbox" id="comp-lightbox" aria-hidden="true">
+                    <button class="lb-close" aria-label="Close">×</button>
+                    <img class="lb-img" alt="">
+                    <button class="lb-prev" aria-label="Previous">‹</button>
+                    <button class="lb-next" aria-label="Next">›</button>
+                </div>
+                </section>
+
 
                 
             </div>
         </section>
 
-        <section class="projects">
-            <h3>Projects</h3>
+        <section class="proj-slider" id="projects" style="margin-top: 600px;">
+            <h4>Selected Projects</h4>
 
-            <div class="ant-colony-optimization">
-                <div class="kairos project">
-                    <div class="inner-wrapper">
-                        <div class="project-displayer">
-                            <div class="imgs-wrapper">
-                                <img src="data/img/aco/img1.png" class="active" alt="image of Kairos website"> <!-- Image 1 -->
-                                <img src="data/img/aco/img2.png" alt="image of Kairos website"> <!-- Image 2 -->
-                                <img src="data/img/aco/img3.png" alt="image of Kairos website"> <!-- Image 3 -->
-                                <img src="data/img/aco/img4.png" alt="image of Kairos website"> <!-- Image 4 -->
-                            </div>
-                        </div>
-                        <div class="left-part">
-                            <h4>Timetable generation using ACO algorithm</h4>
-                            <p>
-                                As part of a team of four, we developed a web application for school 
-                                schedule management. 
-                                <br/><br/>
-                                I <u>designed the API</u> using Django Framework and implemented 
-                                a <u>schedule generator</u> based on the Ant Colony Optimization algorithm.
+            <div class="ps">
+                <button class="ps-arrow ps-prev" aria-label="Previous">❮</button>
 
-                                <br/><br/>
-                                The generator utilizes a scoring function to evaluate timetable quality, 
-                                drawing parallels to the dual problem in optimization. 
-                                This method enhances flexibility while adhering to critical constraints 
-                                regarding teacher and class availability. 
-
-                                The ACO algorithm explores solutions without pheromone expiration, 
-                                maintaining stability in the data. Additionally, a neighborhood 
-                                optimization function refines the results by testing promising 
-                                combinations after each iteration.
-                                
-                                <br/><br/>
-                                This approach aims to produce optimal timetables that enhance efficiency 
-                                and respect availability constraints.
-                            </p>
-
-                            <div class="tags-wrapper">
-                                <span>Python</span>
-                                <span>Django</span>
-                                <span>Machine learning</span>
-                            </div>
-
-                            <h6 onclick="toggle_showcase('kairos-showcase')">More information</h6>
-                        </div>
-                    </div>
+                <div class="ps-viewport">
+                <ul class="ps-track">
                     
-                </div>
-                <div class="background"></div>
+                    <!-- SLIDE 1 -->
+                    <li class="ps-slide">
+                    <article class="ps-card">
+                        <div class="ps-badges"><span class="ps-chip" title="Deep Learning & Representation Learning">DL / Representation Learning</span></div>
 
-                <div class="algo-showcase" id="kairos-showcase">
-                    <i class="fa fa-times" onclick="toggle_showcase('kairos-showcase')"></i>
-                    <span><i class="fa fa-info-circle"></i> fly over for more information</span>
-                    <br/>
-                    <p class="step-header">
-                        The Ant Colony Optimization algorithm is a metaheuristic algorithm inspired by the foraging behavior of ants. 
-                        It is used to solve combinatorial optimization problems. 
-                        <br/><br/>
-                        The algorithm is based on the principle of pheromone deposition by ants on the ground. 
-                        The more ants pass through a path, the more pheromones are deposited on it. 
-                        This allows other ants to follow the path more easily. 
-                        <br/><br/>
-                        The algorithm is based on the following principles:<br/>
-                        -   Construction of solutions<br/>
-                        -   Local search<br/>
-                        -   Updating of pheromones<br/>
-                        <br/>
-                        The first step is to define a function to evaluate the quality of the solutions.
-                        This function is named \( \text{score} \) and is defined as \( \text{score} : \mathbb{T} \to [0, 1] \)
-                        where \( \mathbb{T} \) represents the set of all possible timetables.
-                        <br/><br/>
-                        The score function is expressed as a weighted sum (average) of various feature functions. Each feature function represents a specific characteristic of the timetable (\( \text{tt} \in \mathbb{T} \)):
-                        \(
-                            \:\text{score}(\text{tt}) = \sum_{i=1}^n \alpha_i \cdot f_i(\text{tt})
-                        \)
-                    </p>
-                    <div class="step 1">
-                        <table class="timetable">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>08:00</th>
-                                    <th>08:30</th>
-                                    <th>09:00</th>
-                                    <th>09:30</th>
-                                    <th>10:00</th>
-                                    <th>10:30</th>
-                                    <th>...</th>
-                                    <th>20:00</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Monday</td>
-                                    <td colspan="2" class="course-1">Course 1</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td colspan="2" class="course-2">Course 2</td>
-                                    <td>...</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Tuesday</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>...</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>...</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>...</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Saturday</td>
-                                    <td></td>
-                                    <td colspan="3" class="course-3">Course 3</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>...</td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <figure class="ps-logo">
+                            <img src="data/img/logo/sfr.png" alt="SFR">
+                        </figure>
+                        
+                        <h5 class="ps-title">Discrepancies Detection Between Simulation and Reality Data</h5>
+                        <p>Analysing and quantifying the gap between coverage simulation and measurement data during my first-year Master’s internship.</p>
+                        <button class="btn btn-more">More</button>
+                    </article>
+                    </li>
 
-                        <i class="fa fa-arrow-right"></i>
-
-                        <span>Score: 14%</span>
-
-                        <i class="assoc-symbol">{</i>
-
-                        <div class="score-explanation">
-                            <span>
-                                feature functions:
-                            </span>
-                            <span><i class="fa fa-info-circle"></i> Number of hours for students
-                                <div class="explain">
-                                    <b>1. Penalty function for a day \( d \), based on the number of class hours \( h_d \):</b>
-
-                                    \[
-                                    \text{penalty}(h_d) = \begin{cases} 
-                                          1 & \text{if } h_d \leq 8 \\
-                                          e^{\text{-}k(h_d \, \text{-} \, 8)}& \text{if } h_d > 8, k \in \mathbb{T}^+
-                                       \end{cases}
-                                    \]
-
-                                    We chose \( k = 0.9 \) for this project.
-                                    <br/><br/>
-                                    
-                                    <b>2. Function \(\text{nb_hours_for_students}(tt)\), which uses this penalty for each day in the timetable (TT):</b>
-                                    
-                                    \[
-                                    \text{nb_hours_for_students}(tt) = \sum_{d \in \text{tt}} \text{penalty}(h_d) / | \text{tt} |
-                                    \]
-                                    
-                                    where \( h_d \) represents the total number of class hours on day \( d \).  
-                                    <br/><br/>
-                                    <img src="data/img/aco/penalty_func_for_hours_in_day.png" style="width: min(max(300px, 50vw), 600px);" alt="Penalty function for hours in a day">
-                                </div>
-                            </span>
-
-                            <span><i class="fa fa-info-circle"></i> Number of hours for teachers
-                                <div class="explain">
-                                    <b>1. Penalty function for a day \( d \) and a teacher \( d \), based on the number of class hours \( h_d \):</b>
-
-                                    \[
-                                    \text{penalty}(h_{d, t}) = \begin{cases} 
-                                          1 & \text{if } h_d \leq t.nb\_hours\_by\_day \\
-                                          0 & \text{if } h_d > t.nb\_hours\_by\_day 
-                                       \end{cases}
-                                    \]
-                                    
-                                    <b>2. Function \(\text{nb_hours_for_teacher}(tt)\), which uses this penalty for each day in the timetable (TT) <br/>and \(teachers_d\) the list of teachers for day \( d \):</b>
-                                    
-                                    \[
-                                    \text{nb_hours_for_teacher}(tt) = \frac{1}{\left|\:\text{tt}\right|} * \sum_{d \in \text{tt}} \left( \frac{1}{\left|\:teachers_d \right|} * \sum_{t \in teachers_d} \text{penalty}(h_{d, t}) \right) 
-                                    \]
-                                    
-                                    where \( h_{d, t} \) represents the total number of class hours on day \( d \) for teacher \( t \). 
-                                </div>
-                            </span>
-                            <span><i class="fa fa-info-circle"></i> Size of gaps between hours for students
-                                <div class="explain">
-                                    <b>1. Penalty function for a day \( d \), based on the number of gaps between class hours \( g_d \):</b>
-                                    \[
-                                    \text{penalty_nb_gaps}(g_d) = e^{-\frac{g_d^2}{2 * \sigma^2}}
-                                    \]
-                                    Given that each time slot represents 30 minutes from 8:00 to 20:00, there are indeed 24 slots in a day. The maximum of possible gaps is 22 when there is a course at two extreme ends (8:00 and 20:00) and all other slots are empty. \( \sigma \in ]0, 22] \), we choose \( \sigma = 8 \) 
-                                    <br/><br/>
-                                    <img src="data/img/aco/penalty_func_for_gaps.png" style="width: min(max(300px, 35vw), 500px);" alt="Penalty function for gaps in a day">
-                                    <br/><br/>
-                                    
-                                    <b>2. Penalty function for a day \( d \), and a gap index \( i \) in the day \( d \), for exemple if the gap is between 8:30 and 9:00, the index is 1:</b>
-
-                                    \[
-                                    \text{penalty_gap_position}(g_{d, i}) = 1 - \frac{abs(i - midday)}{midday}
-                                    \]
-                                    where \( midday = \frac{nb\_slots}{2} = 12 \). The idear is to penalize gaps that are far from the middle of the day because they need less operations to be filled.
-                                    <br/><br/>
-                                    <b>3. Function \(\text{nb_gaps_for_students}(tt)\), which uses these penalties for each day in the timetable (TT):</b>
-                                    \[
-                                    \text{nb_gaps_for_students}(tt) = \frac{1}{\left|\:\text{tt}\right|} * \sum_{d \in \text{tt}} \left( \beta_1 * \text{penalty_nb_gaps}(g_d) + \frac{\beta_2}{\left|\,g_d\right|} * \sum_{i}^{g_d} \text{penalty_gap_position}(g_{d, i}) \right) 
-                                    \]
-                                    In this function, \( \beta_1 \) and \( \beta_2 \) are hyperparameters that we set to 0.75 and 0.25 respectively.
-                                </div>
-                            </span>
-                            <span><i class="fa fa-info-circle"></i> Size of gaps between hours for teachers
-                                <div class="explain">
-                                    <b>1. Penalty function for a day \( d \), based on the number of gaps between class hours \( g_d \):</b>
-                                    \[
-                                    \text{penalty_nb_gaps}(g_d) = e^{-\frac{g_d^2}{2 * \sigma^2}}
-                                    \]
-                                    Given that each time slot represents 30 minutes from 8:00 to 20:00, there are indeed 24 slots in a day, with up to 22 gaps possible if a class is placed at only two extreme ends (8:00 and 20:00) and all other slots are empty. \( \sigma \in ]0, 22] \), we choose \( \sigma = 8 \) 
-                                    <br/><br/>
-                                    <img src="data/img/aco/penalty_func_for_gaps.png" style="width: min(max(300px, 35vw), 500px);" alt="Penalty function for gaps in a day">
-                                    <br/><br/>
-                       
-                                    <b>3. Function \(\text{nb_gaps_for_students}(tt)\), which uses these penalties for each day in the timetable (TT):</b>
-                                    \[
-                                    \text{nb_gaps_for_students}(tt) = \frac{1}{\left|\:\text{tt}\right|} * \sum_{d \in \text{tt}} \text{penalty_nb_gaps}(g_d)
-                                    \]
-                                </div>
-                            </span>
-                            <span><i class="fa fa-info-circle"></i> Number of hours on Saturday
-                                <div class="explain">
-                                    <b>1. Penalty function for saturday \( d \), based on the number of slots (half hours) \( h_d \):</b>
-                                    \[
-                                    \text{penalty_saturday_hours}(g_d) = e^{-0.3 * h_d}
-                                    \]
-                                    I've chosen 0.3 as a hyperparameter to penalize fast the number of hours on saturday.
-                                    <br/><br/>
-                                    <img src="data/img/aco/penalty_func_sat_courses.png" style="width: min(max(300px, 35vw), 500px);" alt="Penalty function for hours on saturday">
-                                </div>
-                            </span>
-                            <span><i class="fa fa-info-circle"></i> Size of the lunch break
-                            <div class="explain">
-                                <b>1. Penalty function for a day \( d \), based on the number of slots (half hours) free between 11:30 and 13:30 \( h_d \):</b>
-                                \[
-                                \text{penalty_lunch_break}(g_d) = \frac{1}{e^{-5(h_d - 0.9) + 1}}
-                                \]
-                                I used a sigmoid function to penalize if the lunch break is smaller than an hour. The hyperparameter are adjusted to fit the problem.
-                                <br/><br/>
-                                <img src="data/img/aco/penalty_func_lunchtime.png" style="width: min(max(300px, 35vw), 500px);" alt="Score function for lunch break">
-                            </div>
-                            </span>
+                    <!-- SLIDE 2 -->
+                     <li class="ps-slide">
+                    <article class="ps-card">
+                        <div class="ps-badges">
+                            <span class="ps-chip">Multi-model DL / Computer Vision</span>
                         </div>
-                    </div>
+                        
+                        <figure class="ps-logo">
+                            <img src="data/img/logo/polytechnique.png" alt="Polytechnique">
+                        </figure>
 
-                    <p class="step-header">
-                        We consider \( \Omega \) as the set of all possible association of (day, hour of beginning, course) for a week. <br/>
-                        If we consider \( \text{tt} \in \mathbb{T}_{week} \) and \(\Omega_{tt} = \bigcup_{d \in \text{tt}, h \in \text{tt}_d} \{d, h, tt_{d,h}\} \), then \(\Omega_{tt} \subseteq \Omega\).<br/>
-                        It follow that the score function is also applicable to the subset \(\Omega_{tt}\): \( score(tt) = score(\Omega_{tt}) \)
-                        <br/><br/>
+                        <h5 class="ps-title">Deception Detection in video</h5>
+                        <p>Designing and implementing a multi-modal deep learning model to detect deception in video.</p>
+                        <button class="btn btn-more">More</button>
+                    </article>
+                    </li>
+                    
 
-                        \(\Omega_{i} = \{\alpha_1, \alpha_2, ..., \alpha_n\}\) with \(\alpha_i \in \Omega\)<br/>
-                        We define \( P_i \) the probability to choose \( \alpha_i \) and \( \Omega^{\displaystyle \prime} \) the association between know score and \(\alpha_i\) (also named the learning/pheromone table). <br/>
-                        In fact, every time we generate a timetable we had the score associated with every \( \alpha_i \) in \( \Omega^{\displaystyle \prime} \).
-                        \[
-                            P_i = \gamma * impact + \varepsilon * \Omega^{\displaystyle \prime}_i
-                        \]
-                        where \( \gamma \) and \( \varepsilon \) are hyperparameters, \( \Omega^{\displaystyle \prime}_i \) is the average score associated with \(\alpha_i\).
-                        <br>
-                        \(\varepsilon = 1 - \gamma\) we start the algorithm with \( \gamma = 1 \) and \(\Omega^{\displaystyle \prime}_i = \{\} \). After each iteration, we incrase \( \varepsilon \).
-                        <br/>
-                        The impact function is determinist and represents how many other \(\alpha \) will be not available if we choose \(\alpha_i\). For exemple if we choose a course on monday at 8:00, we can't choose another course at 8:00 on monday, so we will impact all the other association on monday at 8:00 as well as the association with the same course. The impact is considered more important if an impacted association don't has a lot of other possibilities.
-
-                        <br/><br/>
-                        The \(\alpha_i\) selected is the result of a random choice based on the probability distribution \( P \).
-                    </p>
-                    <div class="step 2">
-                        <p>
-                            As illustration, we will place a new course (Course 4) of 1 hour in the timetable.
-                        </p>
-                        <div class="block">
-                            <p>
-                                <b>Step 1: Find the available slots for the course</b>
-                                <br/> To simplify the calculation, we will limite the availables slots to 3, we will consider other slots as not available due to the availability of the teachers (for exemple).
-                            </p>
-                            <table class="timetable">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th>08:00</th>
-                                        <th>08:30</th>
-                                        <th>09:00</th>
-                                        <th>09:30</th>
-                                        <th>10:00</th>
-                                        <th>10:30</th>
-                                        <th>...</th>
-                                        <th>20:00</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Monday</td>
-                                        <td colspan="2" class="course-1">Course 1</td>
-                                        <td class="free-slot"></td>
-                                        <td class="not-free"></td>
-                                        <td colspan="2" class="course-2">Course 2</td>
-                                        <td>...</td>
-                                        <td class="not-free"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tuesday</td>
-                                        <td class="not-free"></td>
-                                        <td class="not-free"></td>
-                                        <td class="not-free"></td>
-                                        <td class="free-slot"></td>
-                                        <td class="not-free"></td>
-                                        <td class="not-free"></td>
-                                        <td>...</td>
-                                        <td class="not-free"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>...</td>
-                                        <td class="not-free"></td>
-                                        <td class="not-free"></td>
-                                        <td class="not-free"></td>
-                                        <td class="not-free"></td>
-                                        <td class="not-free"></td>
-                                        <td class="not-free"></td>
-                                        <td>...</td>
-                                        <td class="not-free"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Saturday</td>
-                                        <td class="not-free"></td>
-                                        <td colspan="3" class="course-3">Course 3</td>
-                                        <td class="free-slot"></td>
-                                        <td class="not-free"></td>
-                                        <td>...</td>
-                                        <td class="not-free"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="block">
-                            <br/>
-                            <br/>
-                            <p>
-                                We will define \( \gamma = 0.1 \) and \( \varepsilon = 0.9 \) for this example.
-                                <br/>
-                                The information about the Course 4 in \(\Omega^{\displaystyle \prime}\) are: <br/>
-                                \(\{Monday, 9:00, Course 4\} \rightarrow 0.7\) <br/>
-                                \(\{Tuesday, 09:30, Course 4\} \rightarrow 0.55\) <br/>
-                                \(\{Saturday, 10:00, Course 4\} \rightarrow 0.2\) <br/>
-                                <br/>
-                                Because there is no other courses to place, the impact function return 1 for each association.
-                                <br/>
-                                <b>Step 2: calculate the probability distribution</b>
-                                <br/>
-                                <span class="large">
-                                \[
-                                    P = \begin{cases}
-                                        0.1 * 1 + 0.9 * 0.7 = 0.73 & \text{if we choose Monday, 9:00} \\
-                                        0.1 * 1 + 0.9 * 0.55 = 0.595 & \text{if we choose Tuesday, 09:30} \\
-                                        0.1 * 1 + 0.9 * 0.2 = 0.28 & \text{if we choose Saturday, 10:00} \\
-                                    \end{cases}
-                                \]
-                                </span>
-                                <span class="small">
-                                \[
-                                    P = \begin{cases}
-                                        0.1 * 1 + 0.9 * 0.7 = 0.73 \\
-                                        0.1 * 1 + 0.9 * 0.55 = 0.595 \\
-                                        0.1 * 1 + 0.9 * 0.2 = 0.28 \\
-                                    \end{cases}
-                                \]
-                                </span>
-
-                                Finally, we do a random choice based on the probability distribution \( P \), in this case, it's most likely that the course will be placed on Monday at 9:00.
-                                <br/><br/>
-                                The final step (when all the courses are set) is to execute the neighborhood optimization function to refine the timetable. In this project i created a function that can be executed in \( O(n) \) where \( n \) is the number of placed courses in the worst case.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="sql-project-internship">
-                <div class="sql-tool project">
-                    <div class="inner-wrapper">
-                        <div class="project-displayer">
-                            <div class="imgs-wrapper">
-                                <img src="data/img/sql-r/img1.png" class="active"> <!-- Image 1 -->
-                                <img src="data/img/sql-r/img2.png" alt="image of Kairos website"> <!-- Image 2 -->
-                                <img src="data/img/sql-r/img3.png" alt="image of Kairos website">
-                                <img src="data/img/sql-r/img4.png" alt="image of Kairos website">
-                                <img src="data/img/sql-r/img5.png" alt="image of Kairos website">
-                            </div>
-                        </div>
-
-                        <div class="left-part">
-                            <h4>SQL Request</h4>
-                            <p>
-                                During my work-study program, I developed SQLR, a powerful <u>SQL query management tool</u>, to improve data accessibility and usability.
-                                <br/><br/>
-                                The tool was designed using Django and supports MySQL and SQL Server databases. SQLR introduces a file explorer for query organization and a streamlined query builder, simplifying SQL syntax management. Additionally, SQLR supports variable creation and API integration, enabling dynamic, multi-source data queries.
-                                <br/><br/>
-                                This tool allows users to manage efficiently complex queries and enhances data accessibility with an intuitive interface. SQLR abstracts the database language after connection, providing an unified interface for both MySQL and SQL Server users. 
-                                <br/><br/>
-                                Finally, SQLR offers a comprehensive and optimized solution for data management and query execution.
-                            </p>
-                            <div class="tags-wrapper">
-                                <span>Python</span>
-                                <span>SQL</span>
-                                <span>JS</span>
-                                <span>Django</span>
+                    <!-- SLIDE 3 -->
+                    <li class="ps-slide">
+                        <article class="ps-card">
+                            <div class="ps-badges">
+                                <span class="ps-chip">ML / LLM</span>
+                                <a class="ps-chip ghost" href="https://magnoss.vercel.app/" target="_blank" style="text-decoration: none !important;">Waitlist</a>
                             </div>
 
-                            <h6 onclick="toggle_showcase('sqlr-showcase')">More information</h6>
+                            <figure class="ps-logo">
+                                <img src="data/img/logo/magnoss.png" alt="MagnOSS" style="border-radius: 12px;">
+                            </figure>
+
+                            <h5 class="ps-title">MagnOSS</h5>
+                            <p>Built a web application to teach chess, developed during the {Tech Europe} hackathon.</p>
+                            <button class="btn btn-more">More</button>
+                        </article>
+                    </li>
+
+                    <!-- SLIDE 4-->
+                    <li class="ps-slide">
+                    <article class="ps-card">
+                        <div class="ps-badges">
+                            <span class="ps-chip">RL / DL</span>
                         </div>
-                    </div>
-                </div>
+                        
+                        <figure class="ps-logo">
+                            <img src="data/img/logo/polytechnique.png" alt="Polytechnique">
+                        </figure>
 
-                <div class="algo-showcase" id="sqlr-showcase">
-                    <i class="fa fa-times" onclick="toggle_showcase('sqlr-showcase')"></i>
-                    <p class="step-header">
-                        SQLR is a web application that allows users to execute SQL queries on a MySQL or SQL Server database. The software is build in two layers, the first one is used to save the generic queries as well as the database connection information. The second layer is the query builder that translates the user's query into a SQL query.
+                        <h5 class="ps-title">AI for Chess</h5>
+                        <p>Implemented chess engines with various reinforcement learning and deep learning techniques.</p>
+                        <button class="btn btn-more">More</button>
+                    </article>
+                    </li>
 
-                        <br/><br/>
-                        SQLR offers the possibility to use variables, editabled by the user before the execution of the query. The software is by default protected against SQL injection and other security issues, however, during the creation of a request, the user can specify to inject a variable in order to create dynamic queries or for other reasons. When a variable is injected, a function is called to check the content of the variable and to prevent any security issue.
-                        <br>
-                        The user can also create python functions that will be executed before the query to prepare the variables, for exemple to format a date or to lowercase etc.
-                        <br/><br/>
+                    <!-- SLIDE 5 -->
+                    <li class="ps-slide">
+                    <article class="ps-card">
+                        <div class="ps-badges"><span class="ps-chip" title="Simulation & Multi-agent Systems">Simulation / Multi-agent Systems</span></div>
 
-                        The most advanced functionnality is the imbrication of queries (using CTE). In fact, the user can create a CTE from an other SQLR query. This allows to create complex queries and to use the result of a query in an other one. If a query in a CTE has variables, the user can map the variables of the CTE to the variables of the main query or give them a default value.
-                        <br/>
-                        The query imbrication is managed by a tree, there is no limit of imbrication. The tree allows the software to optimize the imbrications and to execute the queries in the right order.
-                    </p>
-                    <div class="step 1">
-                        <p>
-                            In this exemple we will consider a query Z that uses the result of the queries B, C and D. These queries use the result of the query A.<br/>
-                            Query Z has two parameters,<br/>
-                            Queries A, B, C and D have one parameter.<br/>
-                            The following schema represents the tree of the imbrication.
-                        </p>
-                        <div class="block">
-                            <img src="data/img/sql-r/tree.png" alt="Tree of imbrication" style="width: min(max(300px, 60vw), 1200px);">
+                        <figure class="ps-logo">
+                            <img src="data/img/logo/tp.png" alt="Télécom Paris">
+                        </figure>
 
-                            <p>
-                                The tree is used to optimize the imbrication of the queries. In this case, the query A will be executed first, in two different variations, the first one with the parameter P.Z.1 and the second one with the parameter P.Z.2.
-                            </p>
+                        <h5 class="ps-title">Resilience of Economic Systems</h5>
+                        <p>Designed and implemented a complex simulation of worldwide economic systems to enable analysis.</p>
+                        <button class="btn btn-more">More</button>
+                    </article>
+                    </li>
+
+                    <!-- SLIDE 6-->
+                    <li class="ps-slide">
+                    <article class="ps-card">
+                        <div class="ps-badges">
+                            <span class="ps-chip" title="Natural Language Processing & Small Language Models">NLP / SLM</span>
                         </div>
+                        
+                        <figure class="ps-logo">
+                            <img src="data/img/logo/polytechnique.png" alt="Polytechnique">
+                        </figure>
+
+                        <h5 class="ps-title">Fine-tuning of SLMs for Summarization</h5>
+                        <p>Fine-tuned small language models for text summarisation tasks in another language.</p>
+                        <button class="btn btn-more">More</button>
+                    </article>
+                    </li>
+
+                    <!-- SLIDE 7-->
+                    <li class="ps-slide">
+                    <article class="ps-card">
+                        <div class="ps-badges">
+                            <span class="ps-chip">DL / Time series analysis</span>
+                        </div>
+                        
+                        <figure class="ps-logo">
+                            <img src="data/img/logo/polytechnique.png" alt="Polytechnique">
+                        </figure>
+
+                        <h5 class="ps-title">Sub Tweet Event Detection</h5>
+                        <p>Developed a deep learning solution for detecting sub-tweet events.</p>
+                        <button class="btn btn-more">More</button>
+                    </article>
+                    </li>
+
+                    <!-- SLIDE 8 -->
+                    <li class="ps-slide">
+                    <article class="ps-card">
+                        <div class="ps-badges">
+                            <span class="ps-chip" title="Data Visualization & Statistics">Data Visualization / Statistics</span>
+                        </div>
+                        
+                        <figure class="ps-logo">
+                            <img src="data/img/logo/polytechnique.png" alt="Polytechnique">
+                        </figure>
+
+                        <h5 class="ps-title">Software for Football Analytics</h5>
+                        <p>Built a web application for visualising and analysing football match and player statistics.</p>
+                        <button class="btn btn-more">More</button>
+                    </article>
+                    </li>
+
+                    <!-- SLIDE 9 -->
+                    <li class="ps-slide">
+                    <article class="ps-card" data-template="project-aco">
+                        <div class="ps-badges"><span class="ps-chip" title="Machine Learning & Ant Colony Optimization">ML / ACO</span></div>
+
+                        <figure class="ps-logo">
+                            <img src="data/img/logo/upjv.png" alt="UPJV">
+                        </figure>
+
+                        <h5 class="ps-title">Ant Colony Optimization for Timetable Generation</h5>
+                        <p>Developed a web application to generate and manage school timetables using an Ant Colony Optimisation algorithm.</p>
+                        <button class="btn btn-more">More</button>
+                    </article>
+                    </li>
+
+                    <!-- SLIDE 10 -->
+                    <li class="ps-slide">
+                    <article class="ps-card" data-template="project-sqlr">
+                        <div class="ps-badges"><span class="ps-chip">SQL / Software Engineering</span></div>
+
+                        <figure class="ps-logo">
+                            <img src="data/img/logo/hafa.png" alt="HAFA">
+                        </figure>
+                        
+                        <h5 class="ps-title">Database Query Tool</h5>
+                        <p>Developed a web application enabling users to execute pre-defined SQL queries with custom options.</p>
+                        <button class="btn btn-more">More</button>
+                    </article>
+                    </li>
+
+                    <!-- SLIDE 11 -->
+                    <li class="ps-slide">
+                    <article class="ps-card">
+                        <div class="ps-badges"><span class="ps-chip">Software Engineering / Data Science</span></div>
+
+                        <figure class="ps-logo">
+                            <img src="data/img/logo/hafa.png" alt="HAFA">
+                        </figure>
+                        
+                        <h5 class="ps-title">Software to Manage Quality Processes</h5>
+                        <p>Developed a web application to manage the industrial quality of petrochemical products.</p>
+                        <button class="btn btn-more">More</button>
+                    </article>
+                    </li>
+
+                    <!-- SLIDE 12 -->
+                    <li class="ps-slide">
+                    <article class="ps-card">
+                        <div class="ps-badges"><span class="ps-chip">Software Engineering</span></div>
+
+                        <figure class="ps-logo">
+                            <img src="data/img/logo/tool.png" alt="Toolbox">
+                        </figure>
+                        
+                        <h5 class="ps-title">Toolboxes for development</h5>
+                        <p>Developed three toolboxes to support my projects: a frontend toolbox, a WebSocket toolbox, and a PyTorch toolbox.</p>
+                        <button class="btn btn-more">More</button>
+                    </article>
+                    </li>
+
+                    <!-- SLIDE 13 -->
+                    <li class="ps-slide">
+                    <article class="ps-card" data-template="project-connect4">
+                        <div class="ps-badges"><span class="ps-chip">RL / ML</span></div>
+
+                        <figure class="ps-logo">
+                            <img src="data/img/logo/upjv.png" alt="UPJV">
+                        </figure>
+                        
+                        <h5 class="ps-title">AI for Connect 4 Game</h5>
+                        <p>Implemented various AI algorithms to play Connect 4 in C#, including reinforcement learning.</p>
+                        <button class="btn btn-more">More</button>
+                    </article>
+                    </li>
+
+                </ul>
                 </div>
+                <button class="ps-arrow ps-next" aria-label="Next">❯</button>
             </div>
 
-            <div class="puissance-4">
-                <div class="connect4 project">
-                    <div class="inner-wrapper">
-                        <div class="connect4-grid">
-                            <span class="cell p1" 
-                                style="top: calc((100% / 6) * 5); left: calc((100% / 7) * 2);">
-                            </span>
-                            <span class="cell p1"
-                                style="top: calc((100% / 6) * 4); left: calc((100% / 7) * 1);">
-                            </span>
-                            <span class="cell p1"
-                                style="top: calc((100% / 6) * 4); left: calc((100% / 7) * 4);">
-                            </span>
-                            <span class="cell p1"
-                                style="top: calc((100% / 6) * 4); left: calc((100% / 7) * 3);">
-                            </span>
-                            <span class="cell p1"
-                                style="top: calc((100% / 6) * 4); left: calc((100% / 7) * 2);">
-                            </span>
-                            <span class="cell p2"
-                                style="top: calc((100% / 6) * 5); left: calc((100% / 7) * 1);">
-                            </span>
-                            <span class="cell p2"
-                                style="top: calc((100% / 6) * 5); left: calc((100% / 7) * 4);">
-                            </span>
-                            <span class="cell p2"
-                                style="top: calc((100% / 6) * 3); left: calc((100% / 7) * 4);">
-                            </span>
-                            <span class="cell p2"
-                                style="top: calc((100% / 6) * 5); left: calc((100% / 7) * 3);">
-                            </span>
-                        </div>
-
-                        <div class="left-part">
-                            <h4>Connect 4</h4>
-                            <p>
-                                The grid in this Connect 4 implementation is vectorized, allowing for efficient updates by recalculating only neighboring vectors as tokens are added. This approach enables rapid win-condition verification, requiring checks on a small subset of vectors rather than a full grid scan.
-                                <br/><br/>
-                                This vector-based structure also strengthens the AI algorithms:
-                                <br/>
-                                - The first bot employs a basic greedy algorithm, functioning as an      "easy" level opponent. <br/>
-                                - The second bot uses a Monte Carlo method to explore possible moves.<br/>
-                                - The third bot leverages an advanced Monte Carlo approach with a projection system that identifies high-priority cells, focusing on strategically important moves. <br/>
-                                <br/>                                
-                                The project is fully developed in C#.
-                            </p>
-
-                            <div class="tags-wrapper">
-                                <span>C#</span>
-                                <span>Machine learning</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="ps-dots" aria-label="Pagination"></div>
         </section>
-        
+
         <div class="background-circle secondary scroll-pop-anim" style="left: 0; margin-top: calc(-20svh - 600px); margin-left: 20svh;"></div>
         <div class="background-circle primary scroll-pop-anim" style="left: 35svh; margin-top: calc(60svh - 600px); width: 40svh;"></div>
         <div class="background-circle accent scroll-pop-anim" style="left: 55svh; margin-top: calc(45svh - 600px); width: 20svh;"></div>
@@ -692,7 +436,7 @@
                         International program focused on Data Science, Machine Learning, and 
                         Artificial Intelligence.
                     </p>
-                    <span class="date">Sept. 2024 - Aug. 2025</span>
+                    <span class="date">Sept. 2024 - Aug. 206</span>
                 </div>
                 
                 
@@ -730,6 +474,17 @@
             </div>
 
             <div class="professional-experience tab">
+                <div class="block scroll-pop-anim">
+                    <h4>Machine Learning Intern for Mobile Networks</h4>
+                    <h5>SFR Altice (Paris, France)</h5>
+                    <p>
+                        Design and implementation of a deep learning solution that learns mobile 
+                        radio coverage patterns and reconstructs theoretical coverage from 
+                        real-world measurements.
+                    </p>
+                    <span class="date">April 2025 - August 2025</span>
+                </div>
+
                 <div class="block scroll-pop-anim">
                     <h4>IT Engineer Apprenticeship</h4>
                     <h5> Holdys - Petrochemical Industry (Yvetot, France)</h5>
@@ -792,21 +547,558 @@
         <i class="fas fa-arrow-up"></i>
     </span>
 
+    <!-- SLIDE 1 -->
+    <template id="project-sfr">
+        SFR
+    </template>
+
+    <!-- SLIDE 2 -->
+    <template id="project-lie-detection">
+        Lie Detection
+    </template>
+
+    <!-- SLIDE 3 -->
+    <template id="project-magnoss">
+        Magnoss
+    </template>
+
+    <!-- SLIDE 4 -->
+    <template id="project-ai-chess">
+        AI Chess
+    </template>
+
+    <!-- SLIDE 5 -->
+    <template id="project-eco-simulator">
+        Eco Simulator
+    </template>
+
+    <!-- SLIDE 6 -->
+    <template id="project-slm">
+        SLM
+    </template>
+
+    <!-- SLIDE 7 -->
+    <template id="project-tweet-event">
+        Tweet Event
+    </template>
+
+    <!-- SLIDE 8 -->
+    <template id="project-football">
+        Football
+    </template>
+
+    <!-- SLIDE 9 -->
+    <template id="project-aco">
+        <h3>ACO</h3>
+
+        <div class="inner-wrapper">
+            <div class="slider-container">
+
+            </div>
+            <div class="left-part">
+                <h4>Timetable generation using ACO algorithm</h4>
+                <p>
+                    As part of a team of four, we developed a web application for school 
+                    schedule management. 
+                    <br/><br/>
+                    I <u>designed the API</u> using Django Framework and implemented 
+                    a <u>schedule generator</u> based on the Ant Colony Optimization algorithm.
+
+                    <br/><br/>
+                    The generator utilizes a scoring function to evaluate timetable quality, 
+                    drawing parallels to the dual problem in optimization. 
+                    This method enhances flexibility while adhering to critical constraints 
+                    regarding teacher and class availability. 
+
+                    The ACO algorithm explores solutions without pheromone expiration, 
+                    maintaining stability in the data. Additionally, a neighborhood 
+                    optimization function refines the results by testing promising 
+                    combinations after each iteration.
+                    
+                    <br/><br/>
+                    This approach aims to produce optimal timetables that enhance efficiency 
+                    and respect availability constraints.
+                </p>
+            </div>
+        </div>
+
+        <div class="algo-showcase" id="kairos-showcase">
+            <i class="fa fa-times" onclick="toggle_showcase('kairos-showcase')"></i>
+            <span><i class="fa fa-info-circle"></i> fly over for more information</span>
+            <br/>
+            <p class="step-header">
+                The Ant Colony Optimization algorithm is a metaheuristic algorithm inspired by the foraging behavior of ants. 
+                It is used to solve combinatorial optimization problems. 
+                <br/><br/>
+                The algorithm is based on the principle of pheromone deposition by ants on the ground. 
+                The more ants pass through a path, the more pheromones are deposited on it. 
+                This allows other ants to follow the path more easily. 
+                <br/><br/>
+                The algorithm is based on the following principles:<br/>
+                -   Construction of solutions<br/>
+                -   Local search<br/>
+                -   Updating of pheromones<br/>
+                <br/>
+                The first step is to define a function to evaluate the quality of the solutions.
+                This function is named \( \text{score} \) and is defined as \( \text{score} : \mathbb{T} \to [0, 1] \)
+                where \( \mathbb{T} \) represents the set of all possible timetables.
+                <br/><br/>
+                The score function is expressed as a weighted sum (average) of various feature functions. Each feature function represents a specific characteristic of the timetable (\( \text{tt} \in \mathbb{T} \)):
+                \(
+                    \:\text{score}(\text{tt}) = \sum_{i=1}^n \alpha_i \cdot f_i(\text{tt})
+                \)
+            </p>
+            <div class="step 1">
+                <table class="timetable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>08:00</th>
+                            <th>08:30</th>
+                            <th>09:00</th>
+                            <th>09:30</th>
+                            <th>10:00</th>
+                            <th>10:30</th>
+                            <th>...</th>
+                            <th>20:00</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td colspan="2" class="course-1">Course 1</td>
+                            <td></td>
+                            <td></td>
+                            <td colspan="2" class="course-2">Course 2</td>
+                            <td>...</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>...</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>...</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td></td>
+                            <td colspan="3" class="course-3">Course 3</td>
+                            <td></td>
+                            <td></td>
+                            <td>...</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <i class="fa fa-arrow-right"></i>
+
+                <span>Score: 14%</span>
+
+                <i class="assoc-symbol">{</i>
+
+                <div class="score-explanation">
+                    <span>
+                        feature functions:
+                    </span>
+                    <span><i class="fa fa-info-circle"></i> Number of hours for students
+                        <div class="explain">
+                            <b>1. Penalty function for a day \( d \), based on the number of class hours \( h_d \):</b>
+
+                            \[
+                            \text{penalty}(h_d) = \begin{cases} 
+                                    1 & \text{if } h_d \leq 8 \\
+                                    e^{\text{-}k(h_d \, \text{-} \, 8)}& \text{if } h_d > 8, k \in \mathbb{T}^+
+                                \end{cases}
+                            \]
+
+                            We chose \( k = 0.9 \) for this project.
+                            <br/><br/>
+                            
+                            <b>2. Function \(\text{nb_hours_for_students}(tt)\), which uses this penalty for each day in the timetable (TT):</b>
+                            
+                            \[
+                            \text{nb_hours_for_students}(tt) = \sum_{d \in \text{tt}} \text{penalty}(h_d) / | \text{tt} |
+                            \]
+                            
+                            where \( h_d \) represents the total number of class hours on day \( d \).  
+                            <br/><br/>
+                            <img src="data/img/aco/penalty_func_for_hours_in_day.png" style="width: min(max(300px, 50vw), 600px);" alt="Penalty function for hours in a day">
+                        </div>
+                    </span>
+
+                    <span><i class="fa fa-info-circle"></i> Number of hours for teachers
+                        <div class="explain">
+                            <b>1. Penalty function for a day \( d \) and a teacher \( d \), based on the number of class hours \( h_d \):</b>
+
+                            \[
+                            \text{penalty}(h_{d, t}) = \begin{cases} 
+                                    1 & \text{if } h_d \leq t.nb\_hours\_by\_day \\
+                                    0 & \text{if } h_d > t.nb\_hours\_by\_day 
+                                \end{cases}
+                            \]
+                            
+                            <b>2. Function \(\text{nb_hours_for_teacher}(tt)\), which uses this penalty for each day in the timetable (TT) <br/>and \(teachers_d\) the list of teachers for day \( d \):</b>
+                            
+                            \[
+                            \text{nb_hours_for_teacher}(tt) = \frac{1}{\left|\:\text{tt}\right|} * \sum_{d \in \text{tt}} \left( \frac{1}{\left|\:teachers_d \right|} * \sum_{t \in teachers_d} \text{penalty}(h_{d, t}) \right) 
+                            \]
+                            
+                            where \( h_{d, t} \) represents the total number of class hours on day \( d \) for teacher \( t \). 
+                        </div>
+                    </span>
+                    <span><i class="fa fa-info-circle"></i> Size of gaps between hours for students
+                        <div class="explain">
+                            <b>1. Penalty function for a day \( d \), based on the number of gaps between class hours \( g_d \):</b>
+                            \[
+                            \text{penalty_nb_gaps}(g_d) = e^{-\frac{g_d^2}{2 * \sigma^2}}
+                            \]
+                            Given that each time slot represents 30 minutes from 8:00 to 20:00, there are indeed 24 slots in a day. The maximum of possible gaps is 22 when there is a course at two extreme ends (8:00 and 20:00) and all other slots are empty. \( \sigma \in ]0, 22] \), we choose \( \sigma = 8 \) 
+                            <br/><br/>
+                            <img src="data/img/aco/penalty_func_for_gaps.png" style="width: min(max(300px, 35vw), 500px);" alt="Penalty function for gaps in a day">
+                            <br/><br/>
+                            
+                            <b>2. Penalty function for a day \( d \), and a gap index \( i \) in the day \( d \), for exemple if the gap is between 8:30 and 9:00, the index is 1:</b>
+
+                            \[
+                            \text{penalty_gap_position}(g_{d, i}) = 1 - \frac{abs(i - midday)}{midday}
+                            \]
+                            where \( midday = \frac{nb\_slots}{2} = 12 \). The idear is to penalize gaps that are far from the middle of the day because they need less operations to be filled.
+                            <br/><br/>
+                            <b>3. Function \(\text{nb_gaps_for_students}(tt)\), which uses these penalties for each day in the timetable (TT):</b>
+                            \[
+                            \text{nb_gaps_for_students}(tt) = \frac{1}{\left|\:\text{tt}\right|} * \sum_{d \in \text{tt}} \left( \beta_1 * \text{penalty_nb_gaps}(g_d) + \frac{\beta_2}{\left|\,g_d\right|} * \sum_{i}^{g_d} \text{penalty_gap_position}(g_{d, i}) \right) 
+                            \]
+                            In this function, \( \beta_1 \) and \( \beta_2 \) are hyperparameters that we set to 0.75 and 0.25 respectively.
+                        </div>
+                    </span>
+                    <span><i class="fa fa-info-circle"></i> Size of gaps between hours for teachers
+                        <div class="explain">
+                            <b>1. Penalty function for a day \( d \), based on the number of gaps between class hours \( g_d \):</b>
+                            \[
+                            \text{penalty_nb_gaps}(g_d) = e^{-\frac{g_d^2}{2 * \sigma^2}}
+                            \]
+                            Given that each time slot represents 30 minutes from 8:00 to 20:00, there are indeed 24 slots in a day, with up to 22 gaps possible if a class is placed at only two extreme ends (8:00 and 20:00) and all other slots are empty. \( \sigma \in ]0, 22] \), we choose \( \sigma = 8 \) 
+                            <br/><br/>
+                            <img src="data/img/aco/penalty_func_for_gaps.png" style="width: min(max(300px, 35vw), 500px);" alt="Penalty function for gaps in a day">
+                            <br/><br/>
+                
+                            <b>3. Function \(\text{nb_gaps_for_students}(tt)\), which uses these penalties for each day in the timetable (TT):</b>
+                            \[
+                            \text{nb_gaps_for_students}(tt) = \frac{1}{\left|\:\text{tt}\right|} * \sum_{d \in \text{tt}} \text{penalty_nb_gaps}(g_d)
+                            \]
+                        </div>
+                    </span>
+                    <span><i class="fa fa-info-circle"></i> Number of hours on Saturday
+                        <div class="explain">
+                            <b>1. Penalty function for saturday \( d \), based on the number of slots (half hours) \( h_d \):</b>
+                            \[
+                            \text{penalty_saturday_hours}(g_d) = e^{-0.3 * h_d}
+                            \]
+                            I've chosen 0.3 as a hyperparameter to penalize fast the number of hours on saturday.
+                            <br/><br/>
+                            <img src="data/img/aco/penalty_func_sat_courses.png" style="width: min(max(300px, 35vw), 500px);" alt="Penalty function for hours on saturday">
+                        </div>
+                    </span>
+                    <span><i class="fa fa-info-circle"></i> Size of the lunch break
+                    <div class="explain">
+                        <b>1. Penalty function for a day \( d \), based on the number of slots (half hours) free between 11:30 and 13:30 \( h_d \):</b>
+                        \[
+                        \text{penalty_lunch_break}(g_d) = \frac{1}{e^{-5(h_d - 0.9) + 1}}
+                        \]
+                        I used a sigmoid function to penalize if the lunch break is smaller than an hour. The hyperparameter are adjusted to fit the problem.
+                        <br/><br/>
+                        <img src="data/img/aco/penalty_func_lunchtime.png" style="width: min(max(300px, 35vw), 500px);" alt="Score function for lunch break">
+                    </div>
+                    </span>
+                </div>
+            </div>
+
+            <p class="step-header">
+                We consider \( \Omega \) as the set of all possible association of (day, hour of beginning, course) for a week. <br/>
+                If we consider \( \text{tt} \in \mathbb{T}_{week} \) and \(\Omega_{tt} = \bigcup_{d \in \text{tt}, h \in \text{tt}_d} \{d, h, tt_{d,h}\} \), then \(\Omega_{tt} \subseteq \Omega\).<br/>
+                It follow that the score function is also applicable to the subset \(\Omega_{tt}\): \( score(tt) = score(\Omega_{tt}) \)
+                <br/><br/>
+
+                \(\Omega_{i} = \{\alpha_1, \alpha_2, ..., \alpha_n\}\) with \(\alpha_i \in \Omega\)<br/>
+                We define \( P_i \) the probability to choose \( \alpha_i \) and \( \Omega^{\displaystyle \prime} \) the association between know score and \(\alpha_i\) (also named the learning/pheromone table). <br/>
+                In fact, every time we generate a timetable we had the score associated with every \( \alpha_i \) in \( \Omega^{\displaystyle \prime} \).
+                \[
+                    P_i = \gamma * impact + \varepsilon * \Omega^{\displaystyle \prime}_i
+                \]
+                where \( \gamma \) and \( \varepsilon \) are hyperparameters, \( \Omega^{\displaystyle \prime}_i \) is the average score associated with \(\alpha_i\).
+                <br>
+                \(\varepsilon = 1 - \gamma\) we start the algorithm with \( \gamma = 1 \) and \(\Omega^{\displaystyle \prime}_i = \{\} \). After each iteration, we incrase \( \varepsilon \).
+                <br/>
+                The impact function is determinist and represents how many other \(\alpha \) will be not available if we choose \(\alpha_i\). For exemple if we choose a course on monday at 8:00, we can't choose another course at 8:00 on monday, so we will impact all the other association on monday at 8:00 as well as the association with the same course. The impact is considered more important if an impacted association don't has a lot of other possibilities.
+
+                <br/><br/>
+                The \(\alpha_i\) selected is the result of a random choice based on the probability distribution \( P \).
+            </p>
+            <div class="step 2">
+                <p>
+                    As illustration, we will place a new course (Course 4) of 1 hour in the timetable.
+                </p>
+                <div class="block">
+                    <p>
+                        <b>Step 1: Find the available slots for the course</b>
+                        <br/> To simplify the calculation, we will limite the availables slots to 3, we will consider other slots as not available due to the availability of the teachers (for exemple).
+                    </p>
+                    <table class="timetable">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>08:00</th>
+                                <th>08:30</th>
+                                <th>09:00</th>
+                                <th>09:30</th>
+                                <th>10:00</th>
+                                <th>10:30</th>
+                                <th>...</th>
+                                <th>20:00</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td colspan="2" class="course-1">Course 1</td>
+                                <td class="free-slot"></td>
+                                <td class="not-free"></td>
+                                <td colspan="2" class="course-2">Course 2</td>
+                                <td>...</td>
+                                <td class="not-free"></td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td class="not-free"></td>
+                                <td class="not-free"></td>
+                                <td class="not-free"></td>
+                                <td class="free-slot"></td>
+                                <td class="not-free"></td>
+                                <td class="not-free"></td>
+                                <td>...</td>
+                                <td class="not-free"></td>
+                            </tr>
+                            <tr>
+                                <td>...</td>
+                                <td class="not-free"></td>
+                                <td class="not-free"></td>
+                                <td class="not-free"></td>
+                                <td class="not-free"></td>
+                                <td class="not-free"></td>
+                                <td class="not-free"></td>
+                                <td>...</td>
+                                <td class="not-free"></td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td class="not-free"></td>
+                                <td colspan="3" class="course-3">Course 3</td>
+                                <td class="free-slot"></td>
+                                <td class="not-free"></td>
+                                <td>...</td>
+                                <td class="not-free"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="block">
+                    <br/>
+                    <br/>
+                    <p>
+                        We will define \( \gamma = 0.1 \) and \( \varepsilon = 0.9 \) for this example.
+                        <br/>
+                        The information about the Course 4 in \(\Omega^{\displaystyle \prime}\) are: <br/>
+                        \(\{Monday, 9:00, Course 4\} \rightarrow 0.7\) <br/>
+                        \(\{Tuesday, 09:30, Course 4\} \rightarrow 0.55\) <br/>
+                        \(\{Saturday, 10:00, Course 4\} \rightarrow 0.2\) <br/>
+                        <br/>
+                        Because there is no other courses to place, the impact function return 1 for each association.
+                        <br/>
+                        <b>Step 2: calculate the probability distribution</b>
+                        <br/>
+                        <span class="large">
+                        \[
+                            P = \begin{cases}
+                                0.1 * 1 + 0.9 * 0.7 = 0.73 & \text{if we choose Monday, 9:00} \\
+                                0.1 * 1 + 0.9 * 0.55 = 0.595 & \text{if we choose Tuesday, 09:30} \\
+                                0.1 * 1 + 0.9 * 0.2 = 0.28 & \text{if we choose Saturday, 10:00} \\
+                            \end{cases}
+                        \]
+                        </span>
+                        <span class="small">
+                        \[
+                            P = \begin{cases}
+                                0.1 * 1 + 0.9 * 0.7 = 0.73 \\
+                                0.1 * 1 + 0.9 * 0.55 = 0.595 \\
+                                0.1 * 1 + 0.9 * 0.2 = 0.28 \\
+                            \end{cases}
+                        \]
+                        </span>
+
+                        Finally, we do a random choice based on the probability distribution \( P \), in this case, it's most likely that the course will be placed on Monday at 9:00.
+                        <br/><br/>
+                        The final step (when all the courses are set) is to execute the neighborhood optimization function to refine the timetable. In this project i created a function that can be executed in \( O(n) \) where \( n \) is the number of placed courses in the worst case.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- SLIDE 10 -->
+    <template id="project-sqlr">
+        SQLR
+
+        <div class="inner-wrapper">
+            <div class="slider-container">
+                
+            </div>
+
+            <div class="left-part">
+                <h4>SQL Request</h4>
+                <p>
+                    During my work-study program, I developed SQLR, a powerful <u>SQL query management tool</u>, to improve data accessibility and usability.
+                    <br/><br/>
+                    The tool was designed using Django and supports MySQL and SQL Server databases. SQLR introduces a file explorer for query organization and a streamlined query builder, simplifying SQL syntax management. Additionally, SQLR supports variable creation and API integration, enabling dynamic, multi-source data queries.
+                    <br/><br/>
+                    This tool allows users to manage efficiently complex queries and enhances data accessibility with an intuitive interface. SQLR abstracts the database language after connection, providing an unified interface for both MySQL and SQL Server users. 
+                    <br/><br/>
+                    Finally, SQLR offers a comprehensive and optimized solution for data management and query execution.
+                </p>
+                <div class="tags-wrapper">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>JS</span>
+                    <span>Django</span>
+                </div>
+
+                <h6 onclick="toggle_showcase('sqlr-showcase')">More information</h6>
+            </div>
+        </div>
+        
+        <div class="algo-showcase" id="sqlr-showcase">
+            <i class="fa fa-times" onclick="toggle_showcase('sqlr-showcase')"></i>
+            <p class="step-header">
+                SQLR is a web application that allows users to execute SQL queries on a MySQL or SQL Server database. The software is build in two layers, the first one is used to save the generic queries as well as the database connection information. The second layer is the query builder that translates the user's query into a SQL query.
+
+                <br/><br/>
+                SQLR offers the possibility to use variables, editabled by the user before the execution of the query. The software is by default protected against SQL injection and other security issues, however, during the creation of a request, the user can specify to inject a variable in order to create dynamic queries or for other reasons. When a variable is injected, a function is called to check the content of the variable and to prevent any security issue.
+                <br>
+                The user can also create python functions that will be executed before the query to prepare the variables, for exemple to format a date or to lowercase etc.
+                <br/><br/>
+
+                The most advanced functionnality is the imbrication of queries (using CTE). In fact, the user can create a CTE from an other SQLR query. This allows to create complex queries and to use the result of a query in an other one. If a query in a CTE has variables, the user can map the variables of the CTE to the variables of the main query or give them a default value.
+                <br/>
+                The query imbrication is managed by a tree, there is no limit of imbrication. The tree allows the software to optimize the imbrications and to execute the queries in the right order.
+            </p>
+            <div class="step 1">
+                <p>
+                    In this exemple we will consider a query Z that uses the result of the queries B, C and D. These queries use the result of the query A.<br/>
+                    Query Z has two parameters,<br/>
+                    Queries A, B, C and D have one parameter.<br/>
+                    The following schema represents the tree of the imbrication.
+                </p>
+                <div class="block">
+                    <img src="data/img/sql-r/tree.png" alt="Tree of imbrication" style="width: min(max(300px, 60vw), 1200px);">
+
+                    <p>
+                        The tree is used to optimize the imbrication of the queries. In this case, the query A will be executed first, in two different variations, the first one with the parameter P.Z.1 and the second one with the parameter P.Z.2.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- SLIDE 11 -->
+    <template id="project-saturne">
+        Saturne
+    </template>
+
+    <!-- SLIDE 12 -->
+    <template id="project-toolbox">
+        Toolbox
+    </template>
+
+    <!-- SLIDE 13 -->
+    <template id="project-connect4">
+        Connect 4
+        <div class="inner-wrapper">
+            <div class="connect4-grid">
+                <span class="cell p1" 
+                    style="top: calc((100% / 6) * 5); left: calc((100% / 7) * 2);">
+                </span>
+                <span class="cell p1"
+                    style="top: calc((100% / 6) * 4); left: calc((100% / 7) * 1);">
+                </span>
+                <span class="cell p1"
+                    style="top: calc((100% / 6) * 4); left: calc((100% / 7) * 4);">
+                </span>
+                <span class="cell p1"
+                    style="top: calc((100% / 6) * 4); left: calc((100% / 7) * 3);">
+                </span>
+                <span class="cell p1"
+                    style="top: calc((100% / 6) * 4); left: calc((100% / 7) * 2);">
+                </span>
+                <span class="cell p2"
+                    style="top: calc((100% / 6) * 5); left: calc((100% / 7) * 1);">
+                </span>
+                <span class="cell p2"
+                    style="top: calc((100% / 6) * 5); left: calc((100% / 7) * 4);">
+                </span>
+                <span class="cell p2"
+                    style="top: calc((100% / 6) * 3); left: calc((100% / 7) * 4);">
+                </span>
+                <span class="cell p2"
+                    style="top: calc((100% / 6) * 5); left: calc((100% / 7) * 3);">
+                </span>
+            </div>
+
+            <div class="left-part">
+                <h4>Connect 4</h4>
+                <p>
+                    The grid in this Connect 4 implementation is vectorized, allowing for efficient updates by recalculating only neighboring vectors as tokens are added. This approach enables rapid win-condition verification, requiring checks on a small subset of vectors rather than a full grid scan.
+                    <br/><br/>
+                    This vector-based structure also strengthens the AI algorithms:
+                    <br/>
+                    - The first bot employs a basic greedy algorithm, functioning as an      "easy" level opponent. <br/>
+                    - The second bot uses a Monte Carlo method to explore possible moves.<br/>
+                    - The third bot leverages an advanced Monte Carlo approach with a projection system that identifies high-priority cells, focusing on strategically important moves. <br/>
+                    <br/>                                
+                    The project is fully developed in C#.
+                </p>
+
+                <div class="tags-wrapper">
+                    <span>C#</span>
+                    <span>Machine learning</span>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
     <script>
+        const {PopUp, Slider} = Toolbox
         const go_up_button = document.querySelector('.go-up');
         const btn_academic = document.querySelector('.academic');
         const btn_professional = document.querySelector('.professional');
         const tab_academic = document.querySelector('.academic-experience');
         const tab_professional = document.querySelector('.professional-experience');
-         // 25vw * screen width
-
-        window.onscroll = () => {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                go_up_button.style.display = 'flex';
-            } else {
-                go_up_button.style.display = 'none';
-            }
-        };
 
         btn_academic.onclick = () => {
             btn_academic.classList.add('active');
@@ -876,13 +1168,6 @@
             document.querySelectorAll('.background-circle').forEach(circle => {
                 update_circle(circle);
             });
-
-            layer_start_y = []
-            let index = 0
-            layers.forEach(layer => {
-                layer_start_y.push(layer.getBoundingClientRect().top - window.innerHeight + window.scrollY - 400 * index + 100);
-                index++;
-            });
         });
 
         function update_circle(circle) {
@@ -929,45 +1214,249 @@
             showcase.classList.toggle('active');
         }
 
-        let currentLayer = -1; // Calque actuel
-        const layers = Array.from(document.querySelectorAll('.project'));
-        
-        let index = 0
-        layers[0].style.marginTop = '4svh';
-        layers[0].style.transform = `translateY(0)`;
+        (function () {
+            const cards = document.querySelectorAll('.comp-card');
 
-        layers.forEach(layer => {
-            layer_start_y.push(layer.getBoundingClientRect().top - window.innerHeight + window.scrollY - 400 * index + 100);
-            index++;
-        });
-        layers[layers.length - 1].style.paddingBottom = 0;
-        layers[layers.length - 1].style.height = '95svh';
-        layers[layers.length - 1].style.maxHeight = '55vw';
-        layers[layers.length - 1].style.minHeight = 'fit-content';
+            cards.forEach(card => {
+            const carousel = card.querySelector('.carousel');
+            const imgs = [...carousel.querySelectorAll('img')];
+            if (imgs.length === 0) return;
 
-        function handleScroll() {
-            let scrollY = window.scrollY;
-            let nextLayer = currentLayer + 1;
-            let prevLayer = currentLayer - 1;
+            let idx = 0;
+            imgs[0].classList.add('is-active');
 
-            if (scrollY > layer_start_y[nextLayer] && nextLayer < layers.length) {
-                currentLayer = nextLayer;
+            const interval = +(carousel.getAttribute('data-interval') || 3000);
+            let timer = start();
 
-                layers.slice(currentLayer, layers.length).forEach(layer => {
-                    layer.style.transform = `translateY(-${currentLayer * 400}px)`;
-                });
-            } else if (scrollY <= layer_start_y[currentLayer] && prevLayer > -1) {
-                layers[currentLayer].style.transform = `translateY(0px)`;
-                currentLayer = prevLayer;
-            } else if (scrollY <= layer_start_y[0] && currentLayer > -1) {
-                currentLayer = -1;
-                layers.forEach(layer => {
-                    layer.style.transform = `translateY(0)`;
-                });
+            function start() {
+                return imgs.length < 2 ? null : setInterval(next, interval);
             }
-        }
+            function stop() { if (timer) clearInterval(timer); }
 
-        window.addEventListener('scroll', handleScroll);
+            function next() {
+                imgs[idx].classList.remove('is-active');
+                idx = (idx + 1) % imgs.length;
+                imgs[idx].classList.add('is-active');
+            }
+
+            carousel.addEventListener('mouseenter', stop);
+            carousel.addEventListener('mouseleave', () => { timer = start(); });
+
+            // Click behavior: lightbox if multiple images, else open link
+            card.addEventListener('click', (e) => {
+                const href = card.getAttribute('data-href');
+                if (imgs.length > 1) openLightbox(imgs.map(i => i.getAttribute('src')));
+                else if (href) window.open(href, '_blank', 'noopener');
+            });
+            });
+
+            // Lightbox minimal
+            const lb = document.getElementById('comp-lightbox');
+            const lbImg = lb.querySelector('.lb-img');
+            const lbPrev = lb.querySelector('.lb-prev');
+            const lbNext = lb.querySelector('.lb-next');
+            const lbClose = lb.querySelector('.lb-close');
+
+            let lbImages = [];
+            let lbIndex = 0;
+
+            function openLightbox(sources) {
+                lbImages = sources;
+                lbIndex = 0;
+                lbImg.src = lbImages[0];
+                lb.classList.add('is-open');
+                lb.setAttribute('aria-hidden', 'false');
+            }
+
+            function closeLightbox() {
+                lb.classList.remove('is-open');
+                lb.setAttribute('aria-hidden', 'true');
+                lbImg.removeAttribute('src');
+            }
+
+            function nav(delta) {
+                lbIndex = (lbIndex + delta + lbImages.length) % lbImages.length;
+                lbImg.src = lbImages[lbIndex];
+            }
+
+            lbPrev.addEventListener('click', () => nav(-1));
+            lbNext.addEventListener('click', () => nav(+1));
+            lbClose.addEventListener('click', closeLightbox);
+            lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
+            document.addEventListener('keydown', (e) => {
+            if (!lb.classList.contains('is-open')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') nav(-1);
+            if (e.key === 'ArrowRight') nav(+1);
+            });
+        })();
+
     </script>
+
+
+    <script>
+        (() => {
+            const root = document.querySelector('.proj-slider');
+            const viewport = root.querySelector('.ps-viewport');
+            const track = root.querySelector('.ps-track');
+            const slides = [...track.querySelectorAll('.ps-slide')];
+            const prev = root.querySelector('.ps-prev');
+            const next = root.querySelector('.ps-next');
+            const dots = root.querySelector('.ps-dots');
+
+            let perView = 1, page = 0, anchors = [];
+            let padL = 0, padR = 0, innerW = 0;
+
+            function cssNumber(el, prop) {
+                const v = parseFloat(getComputedStyle(el)[prop]);
+                return Number.isFinite(v) ? v : 0;
+            }
+            function gap() {
+                const g = parseFloat(getComputedStyle(track).gap || getComputedStyle(track).columnGap);
+                return Number.isFinite(g) ? g : 18;
+            }
+            function computePerView() {
+                const w = viewport.clientWidth - padL - padR; // largeur utile
+                if (w >= 1180) return 3;
+                if (w >= 820)  return 2;
+                return 1;
+            }
+
+            function layout() {
+                // padding réel du viewport
+                padL = cssNumber(viewport, 'paddingLeft');
+                padR = cssNumber(viewport, 'paddingRight');
+                innerW = viewport.clientWidth - padL - padR;
+
+                perView = computePerView();
+                const slideW = Math.max(0, Math.floor((innerW - gap() * (perView - 1)) / perView));
+                track.style.setProperty('--slide-w', slideW + 'px');
+
+                // annule la transform le temps de mesurer
+                track.style.transition = 'none';
+                track.style.transform = 'translate3d(0,0,0)';
+
+                // reflow + mesure des ancres
+                requestAnimationFrame(buildAnchors);
+            }
+
+            function buildAnchors() {
+                const maxShift = Math.max(0, track.scrollWidth - innerW);
+                anchors = [];
+                for (let i = 0; i < slides.length; i += perView) {
+                const off = slides[i].offsetLeft;     // position réelle dans le track
+                anchors.push(Math.min(off, maxShift)); // clamp dernière page
+                }
+                page = Math.min(page, anchors.length - 1);
+                buildDots();
+                goto(page, false);
+            }
+
+            function goto(p, smooth = true) {
+                page = Math.max(0, Math.min(p, anchors.length - 1));
+                const maxShift = Math.max(0, track.scrollWidth - innerW);
+                const anchor = Math.min(anchors[page], maxShift);
+                // aligne le bord gauche du slide avec le bord intérieur du viewport (padding-left)
+                const x = -(anchor - padL);
+                track.style.transition = smooth ? 'transform 380ms ease' : 'none';
+                track.style.transform  = `translate3d(${Math.round(x)}px,0,0)`;
+                syncUI();
+            }
+
+            function syncUI() {
+                [...dots.children].forEach((d, i) => d.setAttribute('aria-current', i === page ? 'true' : 'false'));
+                prev.disabled = (page === 0);
+                next.disabled = (page === anchors.length - 1);
+            }
+
+            function buildDots() {
+                dots.innerHTML = '';
+                for (let i = 0; i < anchors.length; i++) {
+                const b = document.createElement('button');
+                b.addEventListener('click', () => goto(i));
+                dots.appendChild(b);
+                }
+            }
+
+            prev.addEventListener('click', () => goto(page - 1));
+            next.addEventListener('click', () => goto(page + 1));
+            window.addEventListener('resize', layout);
+            window.addEventListener('load', layout);
+
+            layout();
+        })();
+
+        document.querySelectorAll('.btn-more').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const project = btn.parentElement;
+                console.log(project);
+                const template_id = project.getAttribute('data-template');
+                console.log(`template#${template_id}`);
+
+                const template = document.querySelector(`template#${template_id}`);
+                const clone = template.content.cloneNode(true);
+
+                switch (template_id) {
+                    case 'project-aco':
+                        const slides = [
+                            `<img src="data/img/aco/img1.png" class="active" alt="image of Kairos website">`,
+                            `<img src="data/img/aco/img2.png" alt="image of Kairos website">`,
+                            `<img src="data/img/aco/img3.png" alt="image of Kairos website">`,
+                            `<img src="data/img/aco/img4.png" alt="image of Kairos website">`
+                        ];
+
+                        slider = new Slider({
+                            slides,
+                            start_index: 0,
+                            loop: true,
+                            arrows: true,
+                            dots: true,
+                            autoplay_ms: 4000,
+                            pause_on_hover: true,
+                            keyboard: true,
+                            swipe: true,
+                            on_change: (i) => console.log('slide ->', i),
+                        });
+
+                        slider.append_to(clone.querySelector('.slider-container'));
+                        break;
+
+                    case 'project-sqlr':
+                        const slides_sqlr = [
+                            `<img src="data/img/sql-r/img1.png" class="active">`,
+                            `<img src="data/img/sql-r/img2.png" alt="image of Kairos website">`,
+                            `<img src="data/img/sql-r/img3.png" alt="image of Kairos website">`,
+                            `<img src="data/img/sql-r/img4.png" alt="image of Kairos website">`,
+                            `<img src="data/img/sql-r/img5.png" alt="image of Kairos website">`
+                        ];
+
+                        slider_sqlr = new Slider({
+                            slides: slides_sqlr,
+                            start_index: 0,
+                            loop: true,
+                            arrows: true,
+                            dots: true,
+                            autoplay_ms: 4000,
+                            pause_on_hover: true,
+                            keyboard: true,
+                            swipe: true,
+                            on_change: (i) => console.log('slide ->', i),
+                        });
+
+                        slider_sqlr.append_to(clone.querySelector('.slider-container'));
+                        break;
+                    
+                    
+                    }
+                
+                const pop = new PopUp({
+                    content: clone,
+                    buttons: [{ label: 'OK', class_name: 'yes-button' }]
+                }).open();
+            })
+        });
+    </script>
+
+
 </body>
 </html>
