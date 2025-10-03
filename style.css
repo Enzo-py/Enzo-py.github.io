@@ -711,6 +711,10 @@ section.contact .contact-content a i {
   gap: 12px;
 }
 
+.ps-arrow {
+    z-index: 10;
+}
+
 /* Card sizes via data-size */
 .comp-card {
   position: relative;
@@ -728,14 +732,22 @@ section.contact .contact-content a i {
 
 /* Responsive */
 @media (max-width: 1100px) {
-  .competitions-grid { grid-template-columns: repeat(8, 1fr); }
-  .comp-card[data-size="square"] { grid-column: span 4; grid-row: span 22; }
-  .comp-card[data-size="wide"]   { grid-column: span 8; grid-row: span 18; }
-  .comp-card[data-size="tall"]   { grid-column: span 4; grid-row: span 28; }
+    .competitions-grid { grid-template-columns: repeat(8, 1fr); }
+    .comp-card[data-size="square"] { grid-column: span 8; grid-row: span 24; }
+    .comp-card[data-size="wide"]   { grid-column: span 8; grid-row: span 24; }
+    .comp-card[data-size="wide2"]   { grid-column: span 8; grid-row: span 24; }
+    .comp-card[data-size="large"]   { grid-column: span 8; grid-row: span 24; }
+    .comp-card[data-size="tall"]   { grid-column: span 8; grid-row: span 24; }
 }
 @media (max-width: 720px) {
-  .competitions-grid { grid-template-columns: repeat(4, 1fr); }
-  .comp-card { grid-column: span 4 !important; grid-row: span 24 !important; }
+    .competitions-grid { grid-template-columns: repeat(4, 1fr); }
+    .comp-card { grid-column: span 4 !important; grid-row: span 24 !important; }
+
+    main section {
+        padding: 0 !important;
+        margin: 400px 4px 0 4px !important;
+        width: calc(100% - 8px) !important;
+    }
 }
 
 /* Carousel (auto défilement simple) */
@@ -792,8 +804,8 @@ section.contact .contact-content a i {
 
 /* Layout */
 .ps{ position:relative; padding:0 64px; }
-.ps-viewport{ overflow:hidden;}
-.ps-track{ list-style:none; margin:0; padding:0; display:flex; gap:18px; will-change:transform; transform:translate3d(0,0,0); }
+.ps-viewport{ overflow:hidden; padding: 20px 0;}
+.ps-track{ list-style:none; margin:20px; padding:0; display:flex; gap:18px; will-change:transform; transform:translate3d(0,0,0); }
 .ps-slide{ flex:0 0 var(--slide-w, 360px); }
 .ps-card{
   position:relative; 
@@ -806,6 +818,8 @@ section.contact .contact-content a i {
   grid-template-rows:auto auto 1fr auto; 
   align-content:start;
   margin: 20px 0;
+  height: 100%;
+  align-items: center;
 }
 
 /* Card UI */
@@ -837,7 +851,7 @@ section.contact .contact-content a i {
 }
 .ps-prev{ left:12px; } .ps-next{ right:12px; }
 .ps-arrow:disabled{ opacity:.35; cursor:not-allowed; }
-.ps-dots{ display:flex; gap:8px; justify-content:center; padding:10px 0 0; }
+.ps-dots{ display:flex; gap:8px; justify-content:center; padding:10px 0 0; margin-top: 10px;}
 .ps-dots button{ width:8px; height:8px; border-radius:999px; border:0; background:#3a4250; cursor:pointer; }
 .ps-dots button[aria-current="true"]{ background:var(--accent); transform:scale(1.15); }
 

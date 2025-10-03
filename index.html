@@ -1325,7 +1325,7 @@
             function layout() {
                 // padding réel du viewport
                 padL = cssNumber(viewport, 'paddingLeft');
-                padR = cssNumber(viewport, 'paddingRight');
+                padR = cssNumber(viewport, 'paddingRight') + 40;
                 innerW = viewport.clientWidth - padL - padR;
 
                 perView = computePerView();
