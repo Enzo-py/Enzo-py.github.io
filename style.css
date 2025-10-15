@@ -748,6 +748,10 @@ section.contact .contact-content a i {
         margin: 400px 4px 0 4px !important;
         width: calc(100% - 8px) !important;
     }
+
+    main section.home {
+        margin-top: 10px !important;
+    }
 }
 
 /* Carousel (auto défilement simple) */
